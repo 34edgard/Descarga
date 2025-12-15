@@ -1,0 +1,40 @@
+{
+    "data": [
+        {
+            "id_discapacidad": "28",
+            "nombre_discapacidad": "Ninguna"
+        },
+        {
+            "id_discapacidad": "29",
+            "nombre_discapacidad": "Discapacidad Visual"
+        },
+        {
+            "id_discapacidad": "30",
+            "nombre_discapacidad": "Discapacidad Auditiva"
+        },
+        {
+            "id_discapacidad": "31",
+            "nombre_discapacidad": "Discapacidad Motora"
+        },
+        {
+            "id_discapacidad": "32",
+            "nombre_discapacidad": "Discapacidad Intelectual"
+        },
+        {
+            "id_discapacidad": "33",
+            "nombre_discapacidad": "Trastorno del Espectro Autista (TEA)"
+        },
+        {
+            "id_discapacidad": "34",
+            "nombre_discapacidad": "Trastorno por Déficit de Atención e Hiperactividad (TDAH)"
+        },
+        {
+            "id_discapacidad": "35",
+            "nombre_discapacidad": "Discapacidad del Lenguaje"
+        },
+        {
+            "id_discapacidad": "36",
+            "nombre_discapacidad": "Otra Discapacidad (Especificar)"
+        }
+    ]
+}

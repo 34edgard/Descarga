@@ -1,0 +1,119 @@
+{
+    "data": [
+        {
+            "id_estado": "1",
+            "id_pais": "1",
+            "nombre_estado": "Amazonas"
+        },
+        {
+            "id_estado": "2",
+            "id_pais": "1",
+            "nombre_estado": "Anzoátegui"
+        },
+        {
+            "id_estado": "3",
+            "id_pais": "1",
+            "nombre_estado": "Aragua"
+        },
+        {
+            "id_estado": "4",
+            "id_pais": "1",
+            "nombre_estado": "Barinas"
+        },
+        {
+            "id_estado": "5",
+            "id_pais": "1",
+            "nombre_estado": "Bolívar"
+        },
+        {
+            "id_estado": "6",
+            "id_pais": "1",
+            "nombre_estado": "Carabobo"
+        },
+        {
+            "id_estado": "7",
+            "id_pais": "1",
+            "nombre_estado": "Cojedes"
+        },
+        {
+            "id_estado": "8",
+            "id_pais": "1",
+            "nombre_estado": "Delta Amacuro"
+        },
+        {
+            "id_estado": "9",
+            "id_pais": "1",
+            "nombre_estado": "Falcón"
+        },
+        {
+            "id_estado": "10",
+            "id_pais": "1",
+            "nombre_estado": "Guárico"
+        },
+        {
+            "id_estado": "11",
+            "id_pais": "1",
+            "nombre_estado": "Lara"
+        },
+        {
+            "id_estado": "12",
+            "id_pais": "1",
+            "nombre_estado": "Mérida"
+        },
+        {
+            "id_estado": "13",
+            "id_pais": "1",
+            "nombre_estado": "Miranda"
+        },
+        {
+            "id_estado": "14",
+            "id_pais": "1",
+            "nombre_estado": "Monagas"
+        },
+        {
+            "id_estado": "15",
+            "id_pais": "1",
+            "nombre_estado": "Nueva Esparta"
+        },
+        {
+            "id_estado": "16",
+            "id_pais": "1",
+            "nombre_estado": "Portuguesa"
+        },
+        {
+            "id_estado": "17",
+            "id_pais": "1",
+            "nombre_estado": "Sucre"
+        },
+        {
+            "id_estado": "18",
+            "id_pais": "1",
+            "nombre_estado": "Táchira"
+        },
+        {
+            "id_estado": "19",
+            "id_pais": "1",
+            "nombre_estado": "Trujillo"
+        },
+        {
+            "id_estado": "20",
+            "id_pais": "1",
+            "nombre_estado": "Vargas"
+        },
+        {
+            "id_estado": "21",
+            "id_pais": "1",
+            "nombre_estado": "Yaracuy"
+        },
+        {
+            "id_estado": "22",
+            "id_pais": "1",
+            "nombre_estado": "Zulia"
+        },
+        {
+            "id_estado": "23",
+            "id_pais": "1",
+            "nombre_estado": "Dependencias Federales"
+        }
+    ]
+}

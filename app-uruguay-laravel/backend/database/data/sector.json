@@ -1,0 +1,369 @@
+{
+    "data": [
+        {
+            "id_sector": "1",
+            "id_parroquia": "9",
+            "nombre_sector": "Zona Centro"
+        },
+        {
+            "id_sector": "2",
+            "id_parroquia": "9",
+            "nombre_sector": "Barrio Obrero"
+        },
+        {
+            "id_sector": "3",
+            "id_parroquia": "9",
+            "nombre_sector": "Las Cocuizas"
+        },
+        {
+            "id_sector": "4",
+            "id_parroquia": "9",
+            "nombre_sector": "Los Guaritos I"
+        },
+        {
+            "id_sector": "5",
+            "id_parroquia": "9",
+            "nombre_sector": "Los Guaritos II"
+        },
+        {
+            "id_sector": "6",
+            "id_parroquia": "9",
+            "nombre_sector": "Los Guaritos III"
+        },
+        {
+            "id_sector": "7",
+            "id_parroquia": "9",
+            "nombre_sector": "Los Guaritos IV"
+        },
+        {
+            "id_sector": "8",
+            "id_parroquia": "9",
+            "nombre_sector": "Los Guaritos V"
+        },
+        {
+            "id_sector": "9",
+            "id_parroquia": "9",
+            "nombre_sector": "El Parquecito"
+        },
+        {
+            "id_sector": "10",
+            "id_parroquia": "9",
+            "nombre_sector": "La Muralla"
+        },
+        {
+            "id_sector": "11",
+            "id_parroquia": "9",
+            "nombre_sector": "La Floresta"
+        },
+        {
+            "id_sector": "12",
+            "id_parroquia": "9",
+            "nombre_sector": "Fundemos"
+        },
+        {
+            "id_sector": "13",
+            "id_parroquia": "9",
+            "nombre_sector": "Simón Bolívar"
+        },
+        {
+            "id_sector": "14",
+            "id_parroquia": "9",
+            "nombre_sector": "Juanico"
+        },
+        {
+            "id_sector": "15",
+            "id_parroquia": "9",
+            "nombre_sector": "Los Cortijos"
+        },
+        {
+            "id_sector": "16",
+            "id_parroquia": "9",
+            "nombre_sector": "Ciudad Universitaria"
+        },
+        {
+            "id_sector": "17",
+            "id_parroquia": "9",
+            "nombre_sector": "Alto Paramaconi"
+        },
+        {
+            "id_sector": "18",
+            "id_parroquia": "9",
+            "nombre_sector": "Paramaconi"
+        },
+        {
+            "id_sector": "19",
+            "id_parroquia": "9",
+            "nombre_sector": "Villas del Paramaconi"
+        },
+        {
+            "id_sector": "20",
+            "id_parroquia": "9",
+            "nombre_sector": "Terrazas del Paramaconi"
+        },
+        {
+            "id_sector": "21",
+            "id_parroquia": "9",
+            "nombre_sector": "Doña Menca I"
+        },
+        {
+            "id_sector": "22",
+            "id_parroquia": "9",
+            "nombre_sector": "Doña Menca II"
+        },
+        {
+            "id_sector": "23",
+            "id_parroquia": "9",
+            "nombre_sector": "Prados del Este"
+        },
+        {
+            "id_sector": "24",
+            "id_parroquia": "9",
+            "nombre_sector": "Avenida Bella Vista"
+        },
+        {
+            "id_sector": "25",
+            "id_parroquia": "9",
+            "nombre_sector": "Las Brisas del Orinoco"
+        },
+        {
+            "id_sector": "26",
+            "id_parroquia": "9",
+            "nombre_sector": "La Concordia"
+        },
+        {
+            "id_sector": "27",
+            "id_parroquia": "9",
+            "nombre_sector": "Complejo Habitacional Paramaconi"
+        },
+        {
+            "id_sector": "28",
+            "id_parroquia": "9",
+            "nombre_sector": "Lomas del Viento"
+        },
+        {
+            "id_sector": "29",
+            "id_parroquia": "9",
+            "nombre_sector": "Valle Verde"
+        },
+        {
+            "id_sector": "30",
+            "id_parroquia": "9",
+            "nombre_sector": "El Guayabal"
+        },
+        {
+            "id_sector": "31",
+            "id_parroquia": "9",
+            "nombre_sector": "La Cruz"
+        },
+        {
+            "id_sector": "32",
+            "id_parroquia": "9",
+            "nombre_sector": "Virgen del Valle"
+        },
+        {
+            "id_sector": "33",
+            "id_parroquia": "9",
+            "nombre_sector": "23 de Enero"
+        },
+        {
+            "id_sector": "34",
+            "id_parroquia": "1",
+            "nombre_sector": "Sector El Furrial Centro"
+        },
+        {
+            "id_sector": "35",
+            "id_parroquia": "1",
+            "nombre_sector": "Sector La Manga"
+        },
+        {
+            "id_sector": "36",
+            "id_parroquia": "1",
+            "nombre_sector": "Sector Las Parcelas"
+        },
+        {
+            "id_sector": "37",
+            "id_parroquia": "1",
+            "nombre_sector": "Sector Sabana Grande"
+        },
+        {
+            "id_sector": "38",
+            "id_parroquia": "2",
+            "nombre_sector": "Sector Centro San Simón"
+        },
+        {
+            "id_sector": "39",
+            "id_parroquia": "2",
+            "nombre_sector": "Sector La Floresta"
+        },
+        {
+            "id_sector": "40",
+            "id_parroquia": "2",
+            "nombre_sector": "Sector Fundemos"
+        },
+        {
+            "id_sector": "41",
+            "id_parroquia": "2",
+            "nombre_sector": "Sector Villas del Sur"
+        },
+        {
+            "id_sector": "42",
+            "id_parroquia": "3",
+            "nombre_sector": "Sector Alto de Los Godos Centro"
+        },
+        {
+            "id_sector": "43",
+            "id_parroquia": "3",
+            "nombre_sector": "Sector Juana La Avanzadora"
+        },
+        {
+            "id_sector": "44",
+            "id_parroquia": "3",
+            "nombre_sector": "Sector La Constitucion"
+        },
+        {
+            "id_sector": "45",
+            "id_parroquia": "3",
+            "nombre_sector": "Sector Terrazas del Oeste"
+        },
+        {
+            "id_sector": "46",
+            "id_parroquia": "4",
+            "nombre_sector": "Sector Boquerón Centro"
+        },
+        {
+            "id_sector": "47",
+            "id_parroquia": "4",
+            "nombre_sector": "Sector El Caruto"
+        },
+        {
+            "id_sector": "48",
+            "id_parroquia": "4",
+            "nombre_sector": "Sector La Candelaria"
+        },
+        {
+            "id_sector": "49",
+            "id_parroquia": "4",
+            "nombre_sector": "Sector Valle Verde"
+        },
+        {
+            "id_sector": "50",
+            "id_parroquia": "5",
+            "nombre_sector": "Sector Las Cocuizas Centro"
+        },
+        {
+            "id_sector": "51",
+            "id_parroquia": "5",
+            "nombre_sector": "Sector La Gran Victoria"
+        },
+        {
+            "id_sector": "52",
+            "id_parroquia": "5",
+            "nombre_sector": "Sector Los Cortijos"
+        },
+        {
+            "id_sector": "53",
+            "id_parroquia": "5",
+            "nombre_sector": "Sector Doña Menca"
+        },
+        {
+            "id_sector": "54",
+            "id_parroquia": "6",
+            "nombre_sector": "Sector San Vicente Centro"
+        },
+        {
+            "id_sector": "55",
+            "id_parroquia": "6",
+            "nombre_sector": "Sector Las Carolinas"
+        },
+        {
+            "id_sector": "56",
+            "id_parroquia": "6",
+            "nombre_sector": "Sector Brisas del Orinoco"
+        },
+        {
+            "id_sector": "57",
+            "id_parroquia": "6",
+            "nombre_sector": "Sector La Puente"
+        },
+        {
+            "id_sector": "58",
+            "id_parroquia": "7",
+            "nombre_sector": "Sector El Corozo Centro"
+        },
+        {
+            "id_sector": "59",
+            "id_parroquia": "7",
+            "nombre_sector": "Sector El Zamuro"
+        },
+        {
+            "id_sector": "60",
+            "id_parroquia": "7",
+            "nombre_sector": "Sector La Laguna"
+        },
+        {
+            "id_sector": "61",
+            "id_parroquia": "7",
+            "nombre_sector": "Sector Palital"
+        },
+        {
+            "id_sector": "62",
+            "id_parroquia": "8",
+            "nombre_sector": "Sector La Cruz Centro"
+        },
+        {
+            "id_sector": "63",
+            "id_parroquia": "8",
+            "nombre_sector": "Sector Nuevo Horizonte"
+        },
+        {
+            "id_sector": "64",
+            "id_parroquia": "8",
+            "nombre_sector": "Sector Simón Bolívar"
+        },
+        {
+            "id_sector": "65",
+            "id_parroquia": "8",
+            "nombre_sector": "Sector 19 de Abril"
+        },
+        {
+            "id_sector": "66",
+            "id_parroquia": "9",
+            "nombre_sector": "Sector Centro Maturín"
+        },
+        {
+            "id_sector": "67",
+            "id_parroquia": "9",
+            "nombre_sector": "Sector Los Guaritos"
+        },
+        {
+            "id_sector": "68",
+            "id_parroquia": "9",
+            "nombre_sector": "Sector Las Avenidas"
+        },
+        {
+            "id_sector": "69",
+            "id_parroquia": "9",
+            "nombre_sector": "Sector Zona Industrial"
+        },
+        {
+            "id_sector": "70",
+            "id_parroquia": "10",
+            "nombre_sector": "Sector Jusepín Centro"
+        },
+        {
+            "id_sector": "71",
+            "id_parroquia": "10",
+            "nombre_sector": "Sector El Paraíso"
+        },
+        {
+            "id_sector": "72",
+            "id_parroquia": "10",
+            "nombre_sector": "Sector La Toscana"
+        },
+        {
+            "id_sector": "73",
+            "id_parroquia": "10",
+            "nombre_sector": "Sector La Ceiba"
+        }
+    ]
+}

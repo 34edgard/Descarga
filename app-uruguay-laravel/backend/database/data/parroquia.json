@@ -1,0 +1,774 @@
+{
+    "data": [
+        {
+            "id_parroquia": "1",
+            "id_municipio": "1",
+            "nombre_parroquia": "El Furrial"
+        },
+        {
+            "id_parroquia": "2",
+            "id_municipio": "1",
+            "nombre_parroquia": "San Simón"
+        },
+        {
+            "id_parroquia": "3",
+            "id_municipio": "1",
+            "nombre_parroquia": "Alto de Los Godos"
+        },
+        {
+            "id_parroquia": "4",
+            "id_municipio": "1",
+            "nombre_parroquia": "Boquerón"
+        },
+        {
+            "id_parroquia": "5",
+            "id_municipio": "1",
+            "nombre_parroquia": "Las Cocuizas"
+        },
+        {
+            "id_parroquia": "6",
+            "id_municipio": "1",
+            "nombre_parroquia": "San Vicente"
+        },
+        {
+            "id_parroquia": "7",
+            "id_municipio": "1",
+            "nombre_parroquia": "El Corozo"
+        },
+        {
+            "id_parroquia": "8",
+            "id_municipio": "1",
+            "nombre_parroquia": "La Cruz"
+        },
+        {
+            "id_parroquia": "9",
+            "id_municipio": "1",
+            "nombre_parroquia": "Maturín"
+        },
+        {
+            "id_parroquia": "10",
+            "id_municipio": "1",
+            "nombre_parroquia": "Jusepín"
+        },
+        {
+            "id_parroquia": "11",
+            "id_municipio": "2",
+            "nombre_parroquia": "San Antonio"
+        },
+        {
+            "id_parroquia": "12",
+            "id_municipio": "2",
+            "nombre_parroquia": "Los Altos de Sucre"
+        },
+        {
+            "id_parroquia": "13",
+            "id_municipio": "2",
+            "nombre_parroquia": "Santa Inés"
+        },
+        {
+            "id_parroquia": "14",
+            "id_municipio": "2",
+            "nombre_parroquia": "Libertad"
+        },
+        {
+            "id_parroquia": "15",
+            "id_municipio": "3",
+            "nombre_parroquia": "Aguasay"
+        },
+        {
+            "id_parroquia": "16",
+            "id_municipio": "4",
+            "nombre_parroquia": "Caripito"
+        },
+        {
+            "id_parroquia": "17",
+            "id_municipio": "5",
+            "nombre_parroquia": "Caripe"
+        },
+        {
+            "id_parroquia": "18",
+            "id_municipio": "5",
+            "nombre_parroquia": "El Guacharo"
+        },
+        {
+            "id_parroquia": "19",
+            "id_municipio": "6",
+            "nombre_parroquia": "Caicara"
+        },
+        {
+            "id_parroquia": "20",
+            "id_municipio": "6",
+            "nombre_parroquia": "San Felix"
+        },
+        {
+            "id_parroquia": "21",
+            "id_municipio": "6",
+            "nombre_parroquia": "Areo"
+        },
+        {
+            "id_parroquia": "22",
+            "id_municipio": "6",
+            "nombre_parroquia": "Viento Fresco"
+        },
+        {
+            "id_parroquia": "23",
+            "id_municipio": "7",
+            "nombre_parroquia": "Punta de Mata"
+        },
+        {
+            "id_parroquia": "24",
+            "id_municipio": "8",
+            "nombre_parroquia": "Temblador"
+        },
+        {
+            "id_parroquia": "25",
+            "id_municipio": "9",
+            "nombre_parroquia": "Aragua"
+        },
+        {
+            "id_parroquia": "26",
+            "id_municipio": "10",
+            "nombre_parroquia": "Cachipo"
+        },
+        {
+            "id_parroquia": "27",
+            "id_municipio": "11",
+            "nombre_parroquia": "Santa Bárbara"
+        },
+        {
+            "id_parroquia": "28",
+            "id_municipio": "12",
+            "nombre_parroquia": "Barrancas"
+        },
+        {
+            "id_parroquia": "29",
+            "id_municipio": "13",
+            "nombre_parroquia": "Uracoa"
+        },
+        {
+            "id_parroquia": "30",
+            "id_municipio": "14",
+            "nombre_parroquia": "La Esmeralda"
+        },
+        {
+            "id_parroquia": "31",
+            "id_municipio": "14",
+            "nombre_parroquia": "Maripa"
+        },
+        {
+            "id_parroquia": "32",
+            "id_municipio": "15",
+            "nombre_parroquia": "Atabapo"
+        },
+        {
+            "id_parroquia": "33",
+            "id_municipio": "15",
+            "nombre_parroquia": "Ucata"
+        },
+        {
+            "id_parroquia": "34",
+            "id_municipio": "16",
+            "nombre_parroquia": "Fernando Girón Tovar"
+        },
+        {
+            "id_parroquia": "35",
+            "id_municipio": "16",
+            "nombre_parroquia": "Luis Alberto Gómez"
+        },
+        {
+            "id_parroquia": "36",
+            "id_municipio": "17",
+            "nombre_parroquia": "Uramapí"
+        },
+        {
+            "id_parroquia": "37",
+            "id_municipio": "17",
+            "nombre_parroquia": "Sipapo"
+        },
+        {
+            "id_parroquia": "38",
+            "id_municipio": "17",
+            "nombre_parroquia": "Munduapo"
+        },
+        {
+            "id_parroquia": "39",
+            "id_municipio": "17",
+            "nombre_parroquia": "Guayapo"
+        },
+        {
+            "id_parroquia": "40",
+            "id_municipio": "18",
+            "nombre_parroquia": "San Juan de Manapiare"
+        },
+        {
+            "id_parroquia": "41",
+            "id_municipio": "19",
+            "nombre_parroquia": "Maroa"
+        },
+        {
+            "id_parroquia": "42",
+            "id_municipio": "19",
+            "nombre_parroquia": "Victorino"
+        },
+        {
+            "id_parroquia": "43",
+            "id_municipio": "20",
+            "nombre_parroquia": "San Carlos de Río Negro"
+        },
+        {
+            "id_parroquia": "44",
+            "id_municipio": "20",
+            "nombre_parroquia": "Solano"
+        },
+        {
+            "id_parroquia": "45",
+            "id_municipio": "21",
+            "nombre_parroquia": "Anaco"
+        },
+        {
+            "id_parroquia": "46",
+            "id_municipio": "21",
+            "nombre_parroquia": "San Joaquin"
+        },
+        {
+            "id_parroquia": "47",
+            "id_municipio": "22",
+            "nombre_parroquia": "Aragua"
+        },
+        {
+            "id_parroquia": "48",
+            "id_municipio": "23",
+            "nombre_parroquia": "Barcelona"
+        },
+        {
+            "id_parroquia": "49",
+            "id_municipio": "23",
+            "nombre_parroquia": "Cachiri"
+        },
+        {
+            "id_parroquia": "50",
+            "id_municipio": "23",
+            "nombre_parroquia": "El Carmen"
+        },
+        {
+            "id_parroquia": "51",
+            "id_municipio": "23",
+            "nombre_parroquia": "San Cristobal"
+        },
+        {
+            "id_parroquia": "52",
+            "id_municipio": "24",
+            "nombre_parroquia": "Clarines"
+        },
+        {
+            "id_parroquia": "53",
+            "id_municipio": "25",
+            "nombre_parroquia": "Onoto"
+        },
+        {
+            "id_parroquia": "54",
+            "id_municipio": "26",
+            "nombre_parroquia": "Valle de Guanape"
+        },
+        {
+            "id_parroquia": "55",
+            "id_municipio": "27",
+            "nombre_parroquia": "Lechería"
+        },
+        {
+            "id_parroquia": "56",
+            "id_municipio": "28",
+            "nombre_parroquia": "Cantaura"
+        },
+        {
+            "id_parroquia": "57",
+            "id_municipio": "29",
+            "nombre_parroquia": "San José de Guanipa"
+        },
+        {
+            "id_parroquia": "58",
+            "id_municipio": "30",
+            "nombre_parroquia": "Guanta"
+        },
+        {
+            "id_parroquia": "59",
+            "id_municipio": "31",
+            "nombre_parroquia": "Soledad"
+        },
+        {
+            "id_parroquia": "60",
+            "id_municipio": "32",
+            "nombre_parroquia": "San Mateo"
+        },
+        {
+            "id_parroquia": "61",
+            "id_municipio": "33",
+            "nombre_parroquia": "El Chaparro"
+        },
+        {
+            "id_parroquia": "62",
+            "id_municipio": "34",
+            "nombre_parroquia": "Atapirire"
+        },
+        {
+            "id_parroquia": "63",
+            "id_municipio": "35",
+            "nombre_parroquia": "San Diego"
+        },
+        {
+            "id_parroquia": "64",
+            "id_municipio": "36",
+            "nombre_parroquia": "Puerto Píritu"
+        },
+        {
+            "id_parroquia": "65",
+            "id_municipio": "37",
+            "nombre_parroquia": "Píritu"
+        },
+        {
+            "id_parroquia": "66",
+            "id_municipio": "38",
+            "nombre_parroquia": "El Tigre"
+        },
+        {
+            "id_parroquia": "67",
+            "id_municipio": "39",
+            "nombre_parroquia": "Boca de Uchire"
+        },
+        {
+            "id_parroquia": "68",
+            "id_municipio": "40",
+            "nombre_parroquia": "Santa Ana"
+        },
+        {
+            "id_parroquia": "69",
+            "id_municipio": "41",
+            "nombre_parroquia": "El Tigre"
+        },
+        {
+            "id_parroquia": "70",
+            "id_municipio": "42",
+            "nombre_parroquia": "Puerto la Cruz"
+        },
+        {
+            "id_parroquia": "71",
+            "id_municipio": "43",
+            "nombre_parroquia": "San Mateo"
+        },
+        {
+            "id_parroquia": "72",
+            "id_municipio": "44",
+            "nombre_parroquia": "Camatagua"
+        },
+        {
+            "id_parroquia": "73",
+            "id_municipio": "45",
+            "nombre_parroquia": "Santa Rita"
+        },
+        {
+            "id_parroquia": "74",
+            "id_municipio": "46",
+            "nombre_parroquia": "Andrés Eloy Blanco"
+        },
+        {
+            "id_parroquia": "75",
+            "id_municipio": "46",
+            "nombre_parroquia": "Joaquín Crespo"
+        },
+        {
+            "id_parroquia": "76",
+            "id_municipio": "46",
+            "nombre_parroquia": "José Casanova Godoy"
+        },
+        {
+            "id_parroquia": "77",
+            "id_municipio": "46",
+            "nombre_parroquia": "Madre María de San José"
+        },
+        {
+            "id_parroquia": "78",
+            "id_municipio": "46",
+            "nombre_parroquia": "Pedro José Ovalles"
+        },
+        {
+            "id_parroquia": "79",
+            "id_municipio": "47",
+            "nombre_parroquia": "Santa Cruz"
+        },
+        {
+            "id_parroquia": "80",
+            "id_municipio": "48",
+            "nombre_parroquia": "Castor Nieves Ríos"
+        },
+        {
+            "id_parroquia": "81",
+            "id_municipio": "48",
+            "nombre_parroquia": "Las Guacamayas"
+        },
+        {
+            "id_parroquia": "82",
+            "id_municipio": "48",
+            "nombre_parroquia": "Pao de Zárate"
+        },
+        {
+            "id_parroquia": "83",
+            "id_municipio": "48",
+            "nombre_parroquia": "Zuata"
+        },
+        {
+            "id_parroquia": "84",
+            "id_municipio": "49",
+            "nombre_parroquia": "El Consejo"
+        },
+        {
+            "id_parroquia": "85",
+            "id_municipio": "50",
+            "nombre_parroquia": "Palo Negro"
+        },
+        {
+            "id_parroquia": "86",
+            "id_municipio": "50",
+            "nombre_parroquia": "San Martín de Porres"
+        },
+        {
+            "id_parroquia": "87",
+            "id_municipio": "51",
+            "nombre_parroquia": "El Limón"
+        },
+        {
+            "id_parroquia": "88",
+            "id_municipio": "52",
+            "nombre_parroquia": "Ocumare de la Costa"
+        },
+        {
+            "id_parroquia": "89",
+            "id_municipio": "53",
+            "nombre_parroquia": "San Casimiro"
+        },
+        {
+            "id_parroquia": "90",
+            "id_municipio": "54",
+            "nombre_parroquia": "San Sebastián"
+        },
+        {
+            "id_parroquia": "91",
+            "id_municipio": "55",
+            "nombre_parroquia": "Turmero"
+        },
+        {
+            "id_parroquia": "92",
+            "id_municipio": "56",
+            "nombre_parroquia": "Tejerías"
+        },
+        {
+            "id_parroquia": "93",
+            "id_municipio": "57",
+            "nombre_parroquia": "Cagua"
+        },
+        {
+            "id_parroquia": "94",
+            "id_municipio": "58",
+            "nombre_parroquia": "Tovar"
+        },
+        {
+            "id_parroquia": "95",
+            "id_municipio": "59",
+            "nombre_parroquia": "Barbacoas"
+        },
+        {
+            "id_parroquia": "96",
+            "id_municipio": "60",
+            "nombre_parroquia": "Villa de Cura"
+        },
+        {
+            "id_parroquia": "97",
+            "id_municipio": "61",
+            "nombre_parroquia": "Sabaneta"
+        },
+        {
+            "id_parroquia": "98",
+            "id_municipio": "62",
+            "nombre_parroquia": "El Cantón"
+        },
+        {
+            "id_parroquia": "99",
+            "id_municipio": "63",
+            "nombre_parroquia": "Socopó"
+        },
+        {
+            "id_parroquia": "100",
+            "id_municipio": "64",
+            "nombre_parroquia": "Arismendi"
+        },
+        {
+            "id_parroquia": "101",
+            "id_municipio": "65",
+            "nombre_parroquia": "Alto Barinas"
+        },
+        {
+            "id_parroquia": "102",
+            "id_municipio": "65",
+            "nombre_parroquia": "Barinas"
+        },
+        {
+            "id_parroquia": "103",
+            "id_municipio": "65",
+            "nombre_parroquia": "Corazón de Jesús"
+        },
+        {
+            "id_parroquia": "104",
+            "id_municipio": "65",
+            "nombre_parroquia": "El Carmen"
+        },
+        {
+            "id_parroquia": "105",
+            "id_municipio": "65",
+            "nombre_parroquia": "Juan Antonio Rodríguez Domínguez"
+        },
+        {
+            "id_parroquia": "106",
+            "id_municipio": "65",
+            "nombre_parroquia": "Manuel Palacio Fajardo"
+        },
+        {
+            "id_parroquia": "107",
+            "id_municipio": "65",
+            "nombre_parroquia": "Ramón Ignacio Méndez"
+        },
+        {
+            "id_parroquia": "108",
+            "id_municipio": "65",
+            "nombre_parroquia": "Rómulo Betancourt"
+        },
+        {
+            "id_parroquia": "109",
+            "id_municipio": "65",
+            "nombre_parroquia": "Alfredo Arvelo Larriva"
+        },
+        {
+            "id_parroquia": "110",
+            "id_municipio": "66",
+            "nombre_parroquia": "Barinitas"
+        },
+        {
+            "id_parroquia": "111",
+            "id_municipio": "67",
+            "nombre_parroquia": "Barrancas"
+        },
+        {
+            "id_parroquia": "112",
+            "id_municipio": "68",
+            "nombre_parroquia": "Santa Inés"
+        },
+        {
+            "id_parroquia": "113",
+            "id_municipio": "69",
+            "nombre_parroquia": "Obispos"
+        },
+        {
+            "id_parroquia": "114",
+            "id_municipio": "70",
+            "nombre_parroquia": "Ciudad Bolivia"
+        },
+        {
+            "id_parroquia": "115",
+            "id_municipio": "71",
+            "nombre_parroquia": "Libertad"
+        },
+        {
+            "id_parroquia": "116",
+            "id_municipio": "72",
+            "nombre_parroquia": "Ciudad de Nutrias"
+        },
+        {
+            "id_parroquia": "117",
+            "id_municipio": "73",
+            "nombre_parroquia": "Cachamay"
+        },
+        {
+            "id_parroquia": "118",
+            "id_municipio": "73",
+            "nombre_parroquia": "Chirica"
+        },
+        {
+            "id_parroquia": "119",
+            "id_municipio": "73",
+            "nombre_parroquia": "Dalla Costa"
+        },
+        {
+            "id_parroquia": "120",
+            "id_municipio": "73",
+            "nombre_parroquia": "Once de Abril"
+        },
+        {
+            "id_parroquia": "121",
+            "id_municipio": "73",
+            "nombre_parroquia": "Pozo Verde"
+        },
+        {
+            "id_parroquia": "122",
+            "id_municipio": "73",
+            "nombre_parroquia": "Simón Bolívar"
+        },
+        {
+            "id_parroquia": "123",
+            "id_municipio": "73",
+            "nombre_parroquia": "Unare"
+        },
+        {
+            "id_parroquia": "124",
+            "id_municipio": "73",
+            "nombre_parroquia": "Vista al Sol"
+        },
+        {
+            "id_parroquia": "125",
+            "id_municipio": "73",
+            "nombre_parroquia": "Yacumayo"
+        },
+        {
+            "id_parroquia": "126",
+            "id_municipio": "73",
+            "nombre_parroquia": "Ciudad Nueva"
+        },
+        {
+            "id_parroquia": "127",
+            "id_municipio": "74",
+            "nombre_parroquia": "Altagracia"
+        },
+        {
+            "id_parroquia": "128",
+            "id_municipio": "74",
+            "nombre_parroquia": "Ascensión Farreras"
+        },
+        {
+            "id_parroquia": "129",
+            "id_municipio": "74",
+            "nombre_parroquia": "Guaniamo"
+        },
+        {
+            "id_parroquia": "130",
+            "id_municipio": "74",
+            "nombre_parroquia": "Los Pijiguaos"
+        },
+        {
+            "id_parroquia": "131",
+            "id_municipio": "74",
+            "nombre_parroquia": "Pijiguaos"
+        },
+        {
+            "id_parroquia": "132",
+            "id_municipio": "74",
+            "nombre_parroquia": "Urimán"
+        },
+        {
+            "id_parroquia": "133",
+            "id_municipio": "75",
+            "nombre_parroquia": "El Callao"
+        },
+        {
+            "id_parroquia": "134",
+            "id_municipio": "76",
+            "nombre_parroquia": "Gran Sabana"
+        },
+        {
+            "id_parroquia": "135",
+            "id_municipio": "76",
+            "nombre_parroquia": "Ikabarú"
+        },
+        {
+            "id_parroquia": "136",
+            "id_municipio": "77",
+            "nombre_parroquia": "Agua Salada"
+        },
+        {
+            "id_parroquia": "137",
+            "id_municipio": "77",
+            "nombre_parroquia": "Catedral"
+        },
+        {
+            "id_parroquia": "138",
+            "id_municipio": "77",
+            "nombre_parroquia": "José Antonio Páez"
+        },
+        {
+            "id_parroquia": "139",
+            "id_municipio": "77",
+            "nombre_parroquia": "La Sabanita"
+        },
+        {
+            "id_parroquia": "140",
+            "id_municipio": "77",
+            "nombre_parroquia": "Marhuanta"
+        },
+        {
+            "id_parroquia": "141",
+            "id_municipio": "77",
+            "nombre_parroquia": "Orinoco"
+        },
+        {
+            "id_parroquia": "142",
+            "id_municipio": "77",
+            "nombre_parroquia": "Panapana"
+        },
+        {
+            "id_parroquia": "143",
+            "id_municipio": "77",
+            "nombre_parroquia": "Vista Hermosa"
+        },
+        {
+            "id_parroquia": "144",
+            "id_municipio": "78",
+            "nombre_parroquia": "Andrés Eloy Blanco"
+        },
+        {
+            "id_parroquia": "145",
+            "id_municipio": "78",
+            "nombre_parroquia": "Upata"
+        },
+        {
+            "id_parroquia": "146",
+            "id_municipio": "78",
+            "nombre_parroquia": "Pedro Cova"
+        },
+        {
+            "id_parroquia": "147",
+            "id_municipio": "79",
+            "nombre_parroquia": "Salóm"
+        },
+        {
+            "id_parroquia": "148",
+            "id_municipio": "79",
+            "nombre_parroquia": "San Isidro"
+        },
+        {
+            "id_parroquia": "149",
+            "id_municipio": "80",
+            "nombre_parroquia": "Tumeremo"
+        },
+        {
+            "id_parroquia": "150",
+            "id_municipio": "80",
+            "nombre_parroquia": "Dalla Costa"
+        },
+        {
+            "id_parroquia": "151",
+            "id_municipio": "81",
+            "nombre_parroquia": "Aripao"
+        },
+        {
+            "id_parroquia": "152",
+            "id_municipio": "81",
+            "nombre_parroquia": "Guarataro"
+        },
+        {
+            "id_parroquia": "153",
+            "id_municipio": "81",
+            "nombre_parroquia": "Maripa"
+        },
+        {
+            "id_parroquia": "154",
+            "id_municipio": "81",
+            "nombre_parroquia": "Moitaco"
+        }
+    ]
+}

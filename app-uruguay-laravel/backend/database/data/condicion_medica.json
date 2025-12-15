@@ -1,0 +1,44 @@
+{
+    "data": [
+        {
+            "id_condicion_medica": "1",
+            "nombre_condicion_medica": "Ninguna"
+        },
+        {
+            "id_condicion_medica": "2",
+            "nombre_condicion_medica": "Asma"
+        },
+        {
+            "id_condicion_medica": "3",
+            "nombre_condicion_medica": "Alergias (Especificar)"
+        },
+        {
+            "id_condicion_medica": "4",
+            "nombre_condicion_medica": "Diabetes"
+        },
+        {
+            "id_condicion_medica": "5",
+            "nombre_condicion_medica": "Epilepsia"
+        },
+        {
+            "id_condicion_medica": "6",
+            "nombre_condicion_medica": "Enfermedad Cardíaca"
+        },
+        {
+            "id_condicion_medica": "7",
+            "nombre_condicion_medica": "Problemas Renales"
+        },
+        {
+            "id_condicion_medica": "8",
+            "nombre_condicion_medica": "Problemas Digestivos"
+        },
+        {
+            "id_condicion_medica": "9",
+            "nombre_condicion_medica": "Problemas de Salud Mental (Especificar)"
+        },
+        {
+            "id_condicion_medica": "10",
+            "nombre_condicion_medica": "Otra Condición Médica (Especificar)"
+        }
+    ]
+}

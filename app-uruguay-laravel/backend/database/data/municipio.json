@@ -1,0 +1,1634 @@
+{
+    "data": [
+        {
+            "id_municipio": "1",
+            "id_estado": "14",
+            "nombre_municipio": "Maturín"
+        },
+        {
+            "id_municipio": "2",
+            "id_estado": "14",
+            "nombre_municipio": "Acosta"
+        },
+        {
+            "id_municipio": "3",
+            "id_estado": "14",
+            "nombre_municipio": "Aguasay"
+        },
+        {
+            "id_municipio": "4",
+            "id_estado": "14",
+            "nombre_municipio": "Bolívar"
+        },
+        {
+            "id_municipio": "5",
+            "id_estado": "14",
+            "nombre_municipio": "Caripe"
+        },
+        {
+            "id_municipio": "6",
+            "id_estado": "14",
+            "nombre_municipio": "Cedeño"
+        },
+        {
+            "id_municipio": "7",
+            "id_estado": "14",
+            "nombre_municipio": "Ezequiel Zamora"
+        },
+        {
+            "id_municipio": "8",
+            "id_estado": "14",
+            "nombre_municipio": "Libertador"
+        },
+        {
+            "id_municipio": "9",
+            "id_estado": "14",
+            "nombre_municipio": "Piar"
+        },
+        {
+            "id_municipio": "10",
+            "id_estado": "14",
+            "nombre_municipio": "Punceres"
+        },
+        {
+            "id_municipio": "11",
+            "id_estado": "14",
+            "nombre_municipio": "Santa Bárbara"
+        },
+        {
+            "id_municipio": "12",
+            "id_estado": "14",
+            "nombre_municipio": "Sotillo"
+        },
+        {
+            "id_municipio": "13",
+            "id_estado": "14",
+            "nombre_municipio": "Uracoa"
+        },
+        {
+            "id_municipio": "14",
+            "id_estado": "1",
+            "nombre_municipio": "Alto Orinoco"
+        },
+        {
+            "id_municipio": "15",
+            "id_estado": "1",
+            "nombre_municipio": "Atabapo"
+        },
+        {
+            "id_municipio": "16",
+            "id_estado": "1",
+            "nombre_municipio": "Atures"
+        },
+        {
+            "id_municipio": "17",
+            "id_estado": "1",
+            "nombre_municipio": "Autana"
+        },
+        {
+            "id_municipio": "18",
+            "id_estado": "1",
+            "nombre_municipio": "Manapiare"
+        },
+        {
+            "id_municipio": "19",
+            "id_estado": "1",
+            "nombre_municipio": "Maroa"
+        },
+        {
+            "id_municipio": "20",
+            "id_estado": "1",
+            "nombre_municipio": "Río Negro"
+        },
+        {
+            "id_municipio": "21",
+            "id_estado": "2",
+            "nombre_municipio": "Anaco"
+        },
+        {
+            "id_municipio": "22",
+            "id_estado": "2",
+            "nombre_municipio": "Aragua"
+        },
+        {
+            "id_municipio": "23",
+            "id_estado": "2",
+            "nombre_municipio": "Bolívar"
+        },
+        {
+            "id_municipio": "24",
+            "id_estado": "2",
+            "nombre_municipio": "Bruzual"
+        },
+        {
+            "id_municipio": "25",
+            "id_estado": "2",
+            "nombre_municipio": "Cajigal"
+        },
+        {
+            "id_municipio": "26",
+            "id_estado": "2",
+            "nombre_municipio": "Carvajal"
+        },
+        {
+            "id_municipio": "27",
+            "id_estado": "2",
+            "nombre_municipio": "Diego Bautista Urbaneja"
+        },
+        {
+            "id_municipio": "28",
+            "id_estado": "2",
+            "nombre_municipio": "Freites"
+        },
+        {
+            "id_municipio": "29",
+            "id_estado": "2",
+            "nombre_municipio": "Guanipa"
+        },
+        {
+            "id_municipio": "30",
+            "id_estado": "2",
+            "nombre_municipio": "Guanta"
+        },
+        {
+            "id_municipio": "31",
+            "id_estado": "2",
+            "nombre_municipio": "Independencia"
+        },
+        {
+            "id_municipio": "32",
+            "id_estado": "2",
+            "nombre_municipio": "Libertad"
+        },
+        {
+            "id_municipio": "33",
+            "id_estado": "2",
+            "nombre_municipio": "McGregor"
+        },
+        {
+            "id_municipio": "34",
+            "id_estado": "2",
+            "nombre_municipio": "Miranda"
+        },
+        {
+            "id_municipio": "35",
+            "id_estado": "2",
+            "nombre_municipio": "Monagas"
+        },
+        {
+            "id_municipio": "36",
+            "id_estado": "2",
+            "nombre_municipio": "Peñalver"
+        },
+        {
+            "id_municipio": "37",
+            "id_estado": "2",
+            "nombre_municipio": "Píritu"
+        },
+        {
+            "id_municipio": "38",
+            "id_estado": "2",
+            "nombre_municipio": "San José de Guanipa"
+        },
+        {
+            "id_municipio": "39",
+            "id_estado": "2",
+            "nombre_municipio": "San Juan de Capistrano"
+        },
+        {
+            "id_municipio": "40",
+            "id_estado": "2",
+            "nombre_municipio": "Santa Ana"
+        },
+        {
+            "id_municipio": "41",
+            "id_estado": "2",
+            "nombre_municipio": "Simón Rodríguez"
+        },
+        {
+            "id_municipio": "42",
+            "id_estado": "2",
+            "nombre_municipio": "Sotillo"
+        },
+        {
+            "id_municipio": "43",
+            "id_estado": "3",
+            "nombre_municipio": "Bolívar"
+        },
+        {
+            "id_municipio": "44",
+            "id_estado": "3",
+            "nombre_municipio": "Camatagua"
+        },
+        {
+            "id_municipio": "45",
+            "id_estado": "3",
+            "nombre_municipio": "Francisco Linares Alcántara"
+        },
+        {
+            "id_municipio": "46",
+            "id_estado": "3",
+            "nombre_municipio": "Girardot"
+        },
+        {
+            "id_municipio": "47",
+            "id_estado": "3",
+            "nombre_municipio": "José Ángel Lamas"
+        },
+        {
+            "id_municipio": "48",
+            "id_estado": "3",
+            "nombre_municipio": "José Félix Ribas"
+        },
+        {
+            "id_municipio": "49",
+            "id_estado": "3",
+            "nombre_municipio": "José Rafael Revenga"
+        },
+        {
+            "id_municipio": "50",
+            "id_estado": "3",
+            "nombre_municipio": "Libertador"
+        },
+        {
+            "id_municipio": "51",
+            "id_estado": "3",
+            "nombre_municipio": "Mario Briceño Iragorry"
+        },
+        {
+            "id_municipio": "52",
+            "id_estado": "3",
+            "nombre_municipio": "Ocumare de la Costa de Oro"
+        },
+        {
+            "id_municipio": "53",
+            "id_estado": "3",
+            "nombre_municipio": "San Casimiro"
+        },
+        {
+            "id_municipio": "54",
+            "id_estado": "3",
+            "nombre_municipio": "San Sebastián"
+        },
+        {
+            "id_municipio": "55",
+            "id_estado": "3",
+            "nombre_municipio": "Santiago Mariño"
+        },
+        {
+            "id_municipio": "56",
+            "id_estado": "3",
+            "nombre_municipio": "Santos Michelena"
+        },
+        {
+            "id_municipio": "57",
+            "id_estado": "3",
+            "nombre_municipio": "Sucre"
+        },
+        {
+            "id_municipio": "58",
+            "id_estado": "3",
+            "nombre_municipio": "Tovar"
+        },
+        {
+            "id_municipio": "59",
+            "id_estado": "3",
+            "nombre_municipio": "Urdaneta"
+        },
+        {
+            "id_municipio": "60",
+            "id_estado": "3",
+            "nombre_municipio": "Zamora"
+        },
+        {
+            "id_municipio": "61",
+            "id_estado": "4",
+            "nombre_municipio": "Alberto Arvelo Torrealba"
+        },
+        {
+            "id_municipio": "62",
+            "id_estado": "4",
+            "nombre_municipio": "Andrés Eloy Blanco"
+        },
+        {
+            "id_municipio": "63",
+            "id_estado": "4",
+            "nombre_municipio": "Antonio José de Sucre"
+        },
+        {
+            "id_municipio": "64",
+            "id_estado": "4",
+            "nombre_municipio": "Arismendi"
+        },
+        {
+            "id_municipio": "65",
+            "id_estado": "4",
+            "nombre_municipio": "Barinas"
+        },
+        {
+            "id_municipio": "66",
+            "id_estado": "4",
+            "nombre_municipio": "Bolívar"
+        },
+        {
+            "id_municipio": "67",
+            "id_estado": "4",
+            "nombre_municipio": "Cruz Paredes"
+        },
+        {
+            "id_municipio": "68",
+            "id_estado": "4",
+            "nombre_municipio": "Ezequiel Zamora"
+        },
+        {
+            "id_municipio": "69",
+            "id_estado": "4",
+            "nombre_municipio": "Obispos"
+        },
+        {
+            "id_municipio": "70",
+            "id_estado": "4",
+            "nombre_municipio": "Pedraza"
+        },
+        {
+            "id_municipio": "71",
+            "id_estado": "4",
+            "nombre_municipio": "Rojas"
+        },
+        {
+            "id_municipio": "72",
+            "id_estado": "4",
+            "nombre_municipio": "Sosa"
+        },
+        {
+            "id_municipio": "73",
+            "id_estado": "5",
+            "nombre_municipio": "Caroní"
+        },
+        {
+            "id_municipio": "74",
+            "id_estado": "5",
+            "nombre_municipio": "Cedeño"
+        },
+        {
+            "id_municipio": "75",
+            "id_estado": "5",
+            "nombre_municipio": "El Callao"
+        },
+        {
+            "id_municipio": "76",
+            "id_estado": "5",
+            "nombre_municipio": "Gran Sabana"
+        },
+        {
+            "id_municipio": "77",
+            "id_estado": "5",
+            "nombre_municipio": "Heres"
+        },
+        {
+            "id_municipio": "78",
+            "id_estado": "5",
+            "nombre_municipio": "Piar"
+        },
+        {
+            "id_municipio": "79",
+            "id_estado": "5",
+            "nombre_municipio": "Roscio"
+        },
+        {
+            "id_municipio": "80",
+            "id_estado": "5",
+            "nombre_municipio": "Sifontes"
+        },
+        {
+            "id_municipio": "81",
+            "id_estado": "5",
+            "nombre_municipio": "Sucre"
+        },
+        {
+            "id_municipio": "82",
+            "id_estado": "5",
+            "nombre_municipio": "Padre Pedro Chien"
+        },
+        {
+            "id_municipio": "83",
+            "id_estado": "6",
+            "nombre_municipio": "Bejuma"
+        },
+        {
+            "id_municipio": "84",
+            "id_estado": "6",
+            "nombre_municipio": "Carlos Arvelo"
+        },
+        {
+            "id_municipio": "85",
+            "id_estado": "6",
+            "nombre_municipio": "Diego Ibarra"
+        },
+        {
+            "id_municipio": "86",
+            "id_estado": "6",
+            "nombre_municipio": "Guacara"
+        },
+        {
+            "id_municipio": "87",
+            "id_estado": "6",
+            "nombre_municipio": "Juan José Mora"
+        },
+        {
+            "id_municipio": "88",
+            "id_estado": "6",
+            "nombre_municipio": "Libertador"
+        },
+        {
+            "id_municipio": "89",
+            "id_estado": "6",
+            "nombre_municipio": "Los Guayos"
+        },
+        {
+            "id_municipio": "90",
+            "id_estado": "6",
+            "nombre_municipio": "Miranda"
+        },
+        {
+            "id_municipio": "91",
+            "id_estado": "6",
+            "nombre_municipio": "Montalbán"
+        },
+        {
+            "id_municipio": "92",
+            "id_estado": "6",
+            "nombre_municipio": "Naguanagua"
+        },
+        {
+            "id_municipio": "93",
+            "id_estado": "6",
+            "nombre_municipio": "Puerto Cabello"
+        },
+        {
+            "id_municipio": "94",
+            "id_estado": "6",
+            "nombre_municipio": "San Diego"
+        },
+        {
+            "id_municipio": "95",
+            "id_estado": "6",
+            "nombre_municipio": "San Joaquín"
+        },
+        {
+            "id_municipio": "96",
+            "id_estado": "6",
+            "nombre_municipio": "Valencia"
+        },
+        {
+            "id_municipio": "97",
+            "id_estado": "7",
+            "nombre_municipio": "Anzoátegui"
+        },
+        {
+            "id_municipio": "98",
+            "id_estado": "7",
+            "nombre_municipio": "Tinaquillo"
+        },
+        {
+            "id_municipio": "99",
+            "id_estado": "7",
+            "nombre_municipio": "Girardot"
+        },
+        {
+            "id_municipio": "100",
+            "id_estado": "7",
+            "nombre_municipio": "Lima Blanco"
+        },
+        {
+            "id_municipio": "101",
+            "id_estado": "7",
+            "nombre_municipio": "Pao de San Juan Bautista"
+        },
+        {
+            "id_municipio": "102",
+            "id_estado": "7",
+            "nombre_municipio": "Ricaurte"
+        },
+        {
+            "id_municipio": "103",
+            "id_estado": "7",
+            "nombre_municipio": "Rómulo Gallegos"
+        },
+        {
+            "id_municipio": "104",
+            "id_estado": "7",
+            "nombre_municipio": "San Carlos"
+        },
+        {
+            "id_municipio": "105",
+            "id_estado": "8",
+            "nombre_municipio": "Antonio Díaz"
+        },
+        {
+            "id_municipio": "106",
+            "id_estado": "8",
+            "nombre_municipio": "Casacoima"
+        },
+        {
+            "id_municipio": "107",
+            "id_estado": "8",
+            "nombre_municipio": "Pedernales"
+        },
+        {
+            "id_municipio": "108",
+            "id_estado": "8",
+            "nombre_municipio": "Tucupita"
+        },
+        {
+            "id_municipio": "109",
+            "id_estado": "9",
+            "nombre_municipio": "Acosta"
+        },
+        {
+            "id_municipio": "110",
+            "id_estado": "9",
+            "nombre_municipio": "Bolívar"
+        },
+        {
+            "id_municipio": "111",
+            "id_estado": "9",
+            "nombre_municipio": "Buchivacoa"
+        },
+        {
+            "id_municipio": "112",
+            "id_estado": "9",
+            "nombre_municipio": "Cacique Manaure"
+        },
+        {
+            "id_municipio": "113",
+            "id_estado": "9",
+            "nombre_municipio": "Carirubana"
+        },
+        {
+            "id_municipio": "114",
+            "id_estado": "9",
+            "nombre_municipio": "Colina"
+        },
+        {
+            "id_municipio": "115",
+            "id_estado": "9",
+            "nombre_municipio": "Dabajuro"
+        },
+        {
+            "id_municipio": "116",
+            "id_estado": "9",
+            "nombre_municipio": "Democracia"
+        },
+        {
+            "id_municipio": "117",
+            "id_estado": "9",
+            "nombre_municipio": "Falcón"
+        },
+        {
+            "id_municipio": "118",
+            "id_estado": "9",
+            "nombre_municipio": "Federación"
+        },
+        {
+            "id_municipio": "119",
+            "id_estado": "9",
+            "nombre_municipio": "Jacura"
+        },
+        {
+            "id_municipio": "120",
+            "id_estado": "9",
+            "nombre_municipio": "Los Taques"
+        },
+        {
+            "id_municipio": "121",
+            "id_estado": "9",
+            "nombre_municipio": "Mauroa"
+        },
+        {
+            "id_municipio": "122",
+            "id_estado": "9",
+            "nombre_municipio": "Miranda"
+        },
+        {
+            "id_municipio": "123",
+            "id_estado": "9",
+            "nombre_municipio": "Monseñor Iturriza"
+        },
+        {
+            "id_municipio": "124",
+            "id_estado": "9",
+            "nombre_municipio": "Palmasola"
+        },
+        {
+            "id_municipio": "125",
+            "id_estado": "9",
+            "nombre_municipio": "Petit"
+        },
+        {
+            "id_municipio": "126",
+            "id_estado": "9",
+            "nombre_municipio": "Píritu"
+        },
+        {
+            "id_municipio": "127",
+            "id_estado": "9",
+            "nombre_municipio": "San Francisco"
+        },
+        {
+            "id_municipio": "128",
+            "id_estado": "9",
+            "nombre_municipio": "Silva"
+        },
+        {
+            "id_municipio": "129",
+            "id_estado": "9",
+            "nombre_municipio": "Sucre"
+        },
+        {
+            "id_municipio": "130",
+            "id_estado": "9",
+            "nombre_municipio": "Tocópero"
+        },
+        {
+            "id_municipio": "131",
+            "id_estado": "9",
+            "nombre_municipio": "Unión"
+        },
+        {
+            "id_municipio": "132",
+            "id_estado": "9",
+            "nombre_municipio": "Urumaco"
+        },
+        {
+            "id_municipio": "133",
+            "id_estado": "9",
+            "nombre_municipio": "Zamora"
+        },
+        {
+            "id_municipio": "134",
+            "id_estado": "10",
+            "nombre_municipio": "Camaguán"
+        },
+        {
+            "id_municipio": "135",
+            "id_estado": "10",
+            "nombre_municipio": "Chaguaramas"
+        },
+        {
+            "id_municipio": "136",
+            "id_estado": "10",
+            "nombre_municipio": "El Socorro"
+        },
+        {
+            "id_municipio": "137",
+            "id_estado": "10",
+            "nombre_municipio": "José Félix Ribas"
+        },
+        {
+            "id_municipio": "138",
+            "id_estado": "10",
+            "nombre_municipio": "José Tadeo Monagas"
+        },
+        {
+            "id_municipio": "139",
+            "id_estado": "10",
+            "nombre_municipio": "Juan Germán Roscio"
+        },
+        {
+            "id_municipio": "140",
+            "id_estado": "10",
+            "nombre_municipio": "Julián Mellado"
+        },
+        {
+            "id_municipio": "141",
+            "id_estado": "10",
+            "nombre_municipio": "Las Mercedes"
+        },
+        {
+            "id_municipio": "142",
+            "id_estado": "10",
+            "nombre_municipio": "Pedro Zaraza"
+        },
+        {
+            "id_municipio": "143",
+            "id_estado": "10",
+            "nombre_municipio": "San Gerónimo de Guayabal"
+        },
+        {
+            "id_municipio": "144",
+            "id_estado": "10",
+            "nombre_municipio": "San José de Guaribe"
+        },
+        {
+            "id_municipio": "145",
+            "id_estado": "10",
+            "nombre_municipio": "Santa María de Ipire"
+        },
+        {
+            "id_municipio": "146",
+            "id_estado": "10",
+            "nombre_municipio": "Sebastián Francisco de Miranda"
+        },
+        {
+            "id_municipio": "147",
+            "id_estado": "10",
+            "nombre_municipio": "Ortiz"
+        },
+        {
+            "id_municipio": "148",
+            "id_estado": "11",
+            "nombre_municipio": "Andrés Eloy Blanco"
+        },
+        {
+            "id_municipio": "149",
+            "id_estado": "11",
+            "nombre_municipio": "Crespo"
+        },
+        {
+            "id_municipio": "150",
+            "id_estado": "11",
+            "nombre_municipio": "Iribarren"
+        },
+        {
+            "id_municipio": "151",
+            "id_estado": "11",
+            "nombre_municipio": "Jiménez"
+        },
+        {
+            "id_municipio": "152",
+            "id_estado": "11",
+            "nombre_municipio": "Morán"
+        },
+        {
+            "id_municipio": "153",
+            "id_estado": "11",
+            "nombre_municipio": "Palavecino"
+        },
+        {
+            "id_municipio": "154",
+            "id_estado": "11",
+            "nombre_municipio": "Simón Planas"
+        },
+        {
+            "id_municipio": "155",
+            "id_estado": "11",
+            "nombre_municipio": "Torres"
+        },
+        {
+            "id_municipio": "156",
+            "id_estado": "11",
+            "nombre_municipio": "Urdaneta"
+        },
+        {
+            "id_municipio": "157",
+            "id_estado": "12",
+            "nombre_municipio": "Alberto Adriani"
+        },
+        {
+            "id_municipio": "158",
+            "id_estado": "12",
+            "nombre_municipio": "Andrés Bello"
+        },
+        {
+            "id_municipio": "159",
+            "id_estado": "12",
+            "nombre_municipio": "Antonio Pinto Salinas"
+        },
+        {
+            "id_municipio": "160",
+            "id_estado": "12",
+            "nombre_municipio": "Aricagua"
+        },
+        {
+            "id_municipio": "161",
+            "id_estado": "12",
+            "nombre_municipio": "Arzobispo Chacón"
+        },
+        {
+            "id_municipio": "162",
+            "id_estado": "12",
+            "nombre_municipio": "Campo Elías"
+        },
+        {
+            "id_municipio": "163",
+            "id_estado": "12",
+            "nombre_municipio": "Caracciolo Parra Olmedo"
+        },
+        {
+            "id_municipio": "164",
+            "id_estado": "12",
+            "nombre_municipio": "Cardenal Quintero"
+        },
+        {
+            "id_municipio": "165",
+            "id_estado": "12",
+            "nombre_municipio": "Guaraque"
+        },
+        {
+            "id_municipio": "166",
+            "id_estado": "12",
+            "nombre_municipio": "Julio César Salas"
+        },
+        {
+            "id_municipio": "167",
+            "id_estado": "12",
+            "nombre_municipio": "Justo Briceño"
+        },
+        {
+            "id_municipio": "168",
+            "id_estado": "12",
+            "nombre_municipio": "Libertador"
+        },
+        {
+            "id_municipio": "169",
+            "id_estado": "12",
+            "nombre_municipio": "Miranda"
+        },
+        {
+            "id_municipio": "170",
+            "id_estado": "12",
+            "nombre_municipio": "Obispo Ramos de Lora"
+        },
+        {
+            "id_municipio": "171",
+            "id_estado": "12",
+            "nombre_municipio": "Padre Noguera"
+        },
+        {
+            "id_municipio": "172",
+            "id_estado": "12",
+            "nombre_municipio": "Pueblo Llano"
+        },
+        {
+            "id_municipio": "173",
+            "id_estado": "12",
+            "nombre_municipio": "Rangel"
+        },
+        {
+            "id_municipio": "174",
+            "id_estado": "12",
+            "nombre_municipio": "Rivas Dávila"
+        },
+        {
+            "id_municipio": "175",
+            "id_estado": "12",
+            "nombre_municipio": "Santos Marquina"
+        },
+        {
+            "id_municipio": "176",
+            "id_estado": "12",
+            "nombre_municipio": "Sucre"
+        },
+        {
+            "id_municipio": "177",
+            "id_estado": "12",
+            "nombre_municipio": "Tovar"
+        },
+        {
+            "id_municipio": "178",
+            "id_estado": "12",
+            "nombre_municipio": "Tulio Febres Cordero"
+        },
+        {
+            "id_municipio": "179",
+            "id_estado": "12",
+            "nombre_municipio": "Zea"
+        },
+        {
+            "id_municipio": "180",
+            "id_estado": "13",
+            "nombre_municipio": "Acevedo"
+        },
+        {
+            "id_municipio": "181",
+            "id_estado": "13",
+            "nombre_municipio": "Andrés Bello"
+        },
+        {
+            "id_municipio": "182",
+            "id_estado": "13",
+            "nombre_municipio": "Baruta"
+        },
+        {
+            "id_municipio": "183",
+            "id_estado": "13",
+            "nombre_municipio": "Brión"
+        },
+        {
+            "id_municipio": "184",
+            "id_estado": "13",
+            "nombre_municipio": "Buroz"
+        },
+        {
+            "id_municipio": "185",
+            "id_estado": "13",
+            "nombre_municipio": "Carrizal"
+        },
+        {
+            "id_municipio": "186",
+            "id_estado": "13",
+            "nombre_municipio": "Chacao"
+        },
+        {
+            "id_municipio": "187",
+            "id_estado": "13",
+            "nombre_municipio": "Cristóbal Rojas"
+        },
+        {
+            "id_municipio": "188",
+            "id_estado": "13",
+            "nombre_municipio": "El Hatillo"
+        },
+        {
+            "id_municipio": "189",
+            "id_estado": "13",
+            "nombre_municipio": "Guaicaipuro"
+        },
+        {
+            "id_municipio": "190",
+            "id_estado": "13",
+            "nombre_municipio": "Independencia"
+        },
+        {
+            "id_municipio": "191",
+            "id_estado": "13",
+            "nombre_municipio": "Lander"
+        },
+        {
+            "id_municipio": "192",
+            "id_estado": "13",
+            "nombre_municipio": "Los Salias"
+        },
+        {
+            "id_municipio": "193",
+            "id_estado": "13",
+            "nombre_municipio": "Páez"
+        },
+        {
+            "id_municipio": "194",
+            "id_estado": "13",
+            "nombre_municipio": "Paz Castillo"
+        },
+        {
+            "id_municipio": "195",
+            "id_estado": "13",
+            "nombre_municipio": "Plaza"
+        },
+        {
+            "id_municipio": "196",
+            "id_estado": "13",
+            "nombre_municipio": "Simón Bolívar"
+        },
+        {
+            "id_municipio": "197",
+            "id_estado": "13",
+            "nombre_municipio": "Sucre"
+        },
+        {
+            "id_municipio": "198",
+            "id_estado": "13",
+            "nombre_municipio": "Urdaneta"
+        },
+        {
+            "id_municipio": "199",
+            "id_estado": "13",
+            "nombre_municipio": "Zamora"
+        },
+        {
+            "id_municipio": "200",
+            "id_estado": "15",
+            "nombre_municipio": "Antolín del Campo"
+        },
+        {
+            "id_municipio": "201",
+            "id_estado": "15",
+            "nombre_municipio": "Arismendi"
+        },
+        {
+            "id_municipio": "202",
+            "id_estado": "15",
+            "nombre_municipio": "Díaz"
+        },
+        {
+            "id_municipio": "203",
+            "id_estado": "15",
+            "nombre_municipio": "García"
+        },
+        {
+            "id_municipio": "204",
+            "id_estado": "15",
+            "nombre_municipio": "Gómez"
+        },
+        {
+            "id_municipio": "205",
+            "id_estado": "15",
+            "nombre_municipio": "Maneiro"
+        },
+        {
+            "id_municipio": "206",
+            "id_estado": "15",
+            "nombre_municipio": "Marcano"
+        },
+        {
+            "id_municipio": "207",
+            "id_estado": "15",
+            "nombre_municipio": "Mariño"
+        },
+        {
+            "id_municipio": "208",
+            "id_estado": "15",
+            "nombre_municipio": "Península de Macanao"
+        },
+        {
+            "id_municipio": "209",
+            "id_estado": "15",
+            "nombre_municipio": "Tubores"
+        },
+        {
+            "id_municipio": "210",
+            "id_estado": "15",
+            "nombre_municipio": "Villalba"
+        },
+        {
+            "id_municipio": "211",
+            "id_estado": "16",
+            "nombre_municipio": "Agua Blanca"
+        },
+        {
+            "id_municipio": "212",
+            "id_estado": "16",
+            "nombre_municipio": "Araure"
+        },
+        {
+            "id_municipio": "213",
+            "id_estado": "16",
+            "nombre_municipio": "Esteller"
+        },
+        {
+            "id_municipio": "214",
+            "id_estado": "16",
+            "nombre_municipio": "Guanare"
+        },
+        {
+            "id_municipio": "215",
+            "id_estado": "16",
+            "nombre_municipio": "Guanarito"
+        },
+        {
+            "id_municipio": "216",
+            "id_estado": "16",
+            "nombre_municipio": "José Antonio Páez"
+        },
+        {
+            "id_municipio": "217",
+            "id_estado": "16",
+            "nombre_municipio": "Ospino"
+        },
+        {
+            "id_municipio": "218",
+            "id_estado": "16",
+            "nombre_municipio": "Páez"
+        },
+        {
+            "id_municipio": "219",
+            "id_estado": "16",
+            "nombre_municipio": "Papelón"
+        },
+        {
+            "id_municipio": "220",
+            "id_estado": "16",
+            "nombre_municipio": "San Genaro de Boconoíto"
+        },
+        {
+            "id_municipio": "221",
+            "id_estado": "16",
+            "nombre_municipio": "San Rafael de Onoto"
+        },
+        {
+            "id_municipio": "222",
+            "id_estado": "16",
+            "nombre_municipio": "Santa Rosalía"
+        },
+        {
+            "id_municipio": "223",
+            "id_estado": "16",
+            "nombre_municipio": "Sucre"
+        },
+        {
+            "id_municipio": "224",
+            "id_estado": "16",
+            "nombre_municipio": "Turén"
+        },
+        {
+            "id_municipio": "225",
+            "id_estado": "17",
+            "nombre_municipio": "Andrés Eloy Blanco"
+        },
+        {
+            "id_municipio": "226",
+            "id_estado": "17",
+            "nombre_municipio": "Andrés Mata"
+        },
+        {
+            "id_municipio": "227",
+            "id_estado": "17",
+            "nombre_municipio": "Arismendi"
+        },
+        {
+            "id_municipio": "228",
+            "id_estado": "17",
+            "nombre_municipio": "Benítez"
+        },
+        {
+            "id_municipio": "229",
+            "id_estado": "17",
+            "nombre_municipio": "Bermúdez"
+        },
+        {
+            "id_municipio": "230",
+            "id_estado": "17",
+            "nombre_municipio": "Bolívar"
+        },
+        {
+            "id_municipio": "231",
+            "id_estado": "17",
+            "nombre_municipio": "Cajigal"
+        },
+        {
+            "id_municipio": "232",
+            "id_estado": "17",
+            "nombre_municipio": "Cruz Salmerón Acosta"
+        },
+        {
+            "id_municipio": "233",
+            "id_estado": "17",
+            "nombre_municipio": "Libertador"
+        },
+        {
+            "id_municipio": "234",
+            "id_estado": "17",
+            "nombre_municipio": "Mariño"
+        },
+        {
+            "id_municipio": "235",
+            "id_estado": "17",
+            "nombre_municipio": "Mejía"
+        },
+        {
+            "id_municipio": "236",
+            "id_estado": "17",
+            "nombre_municipio": "Montes"
+        },
+        {
+            "id_municipio": "237",
+            "id_estado": "17",
+            "nombre_municipio": "Ribero"
+        },
+        {
+            "id_municipio": "238",
+            "id_estado": "17",
+            "nombre_municipio": "Sucre"
+        },
+        {
+            "id_municipio": "239",
+            "id_estado": "17",
+            "nombre_municipio": "Valdez"
+        },
+        {
+            "id_municipio": "240",
+            "id_estado": "18",
+            "nombre_municipio": "Andrés Bello"
+        },
+        {
+            "id_municipio": "241",
+            "id_estado": "18",
+            "nombre_municipio": "Antonio Rómulo Costa"
+        },
+        {
+            "id_municipio": "242",
+            "id_estado": "18",
+            "nombre_municipio": "Ayacucho"
+        },
+        {
+            "id_municipio": "243",
+            "id_estado": "18",
+            "nombre_municipio": "Bolívar"
+        },
+        {
+            "id_municipio": "244",
+            "id_estado": "18",
+            "nombre_municipio": "Cárdenas"
+        },
+        {
+            "id_municipio": "245",
+            "id_estado": "18",
+            "nombre_municipio": "Córdoba"
+        },
+        {
+            "id_municipio": "246",
+            "id_estado": "18",
+            "nombre_municipio": "Fernández Feo"
+        },
+        {
+            "id_municipio": "247",
+            "id_estado": "18",
+            "nombre_municipio": "Francisco de Miranda"
+        },
+        {
+            "id_municipio": "248",
+            "id_estado": "18",
+            "nombre_municipio": "García de Hevia"
+        },
+        {
+            "id_municipio": "249",
+            "id_estado": "18",
+            "nombre_municipio": "Guásimos"
+        },
+        {
+            "id_municipio": "250",
+            "id_estado": "18",
+            "nombre_municipio": "Independencia"
+        },
+        {
+            "id_municipio": "251",
+            "id_estado": "18",
+            "nombre_municipio": "Jáuregui"
+        },
+        {
+            "id_municipio": "252",
+            "id_estado": "18",
+            "nombre_municipio": "José María Vargas"
+        },
+        {
+            "id_municipio": "253",
+            "id_estado": "18",
+            "nombre_municipio": "Junín"
+        },
+        {
+            "id_municipio": "254",
+            "id_estado": "18",
+            "nombre_municipio": "Libertad"
+        },
+        {
+            "id_municipio": "255",
+            "id_estado": "18",
+            "nombre_municipio": "Libertador"
+        },
+        {
+            "id_municipio": "256",
+            "id_estado": "18",
+            "nombre_municipio": "Lobatera"
+        },
+        {
+            "id_municipio": "257",
+            "id_estado": "18",
+            "nombre_municipio": "Michelena"
+        },
+        {
+            "id_municipio": "258",
+            "id_estado": "18",
+            "nombre_municipio": "Panamericano"
+        },
+        {
+            "id_municipio": "259",
+            "id_estado": "18",
+            "nombre_municipio": "Pedro María Ureña"
+        },
+        {
+            "id_municipio": "260",
+            "id_estado": "18",
+            "nombre_municipio": "Rafael Urdaneta"
+        },
+        {
+            "id_municipio": "261",
+            "id_estado": "18",
+            "nombre_municipio": "Samuel Darío Maldonado"
+        },
+        {
+            "id_municipio": "262",
+            "id_estado": "18",
+            "nombre_municipio": "San Cristóbal"
+        },
+        {
+            "id_municipio": "263",
+            "id_estado": "18",
+            "nombre_municipio": "Seboruco"
+        },
+        {
+            "id_municipio": "264",
+            "id_estado": "18",
+            "nombre_municipio": "Simón Rodríguez"
+        },
+        {
+            "id_municipio": "265",
+            "id_estado": "18",
+            "nombre_municipio": "Sucre"
+        },
+        {
+            "id_municipio": "266",
+            "id_estado": "18",
+            "nombre_municipio": "Torbes"
+        },
+        {
+            "id_municipio": "267",
+            "id_estado": "18",
+            "nombre_municipio": "Uribante"
+        },
+        {
+            "id_municipio": "268",
+            "id_estado": "18",
+            "nombre_municipio": "San Judas Tadeo"
+        },
+        {
+            "id_municipio": "269",
+            "id_estado": "19",
+            "nombre_municipio": "Andrés Bello"
+        },
+        {
+            "id_municipio": "270",
+            "id_estado": "19",
+            "nombre_municipio": "Bocono"
+        },
+        {
+            "id_municipio": "271",
+            "id_estado": "19",
+            "nombre_municipio": "Bolívar"
+        },
+        {
+            "id_municipio": "272",
+            "id_estado": "19",
+            "nombre_municipio": "Candelaria"
+        },
+        {
+            "id_municipio": "273",
+            "id_estado": "19",
+            "nombre_municipio": "Carache"
+        },
+        {
+            "id_municipio": "274",
+            "id_estado": "19",
+            "nombre_municipio": "Escuque"
+        },
+        {
+            "id_municipio": "275",
+            "id_estado": "19",
+            "nombre_municipio": "José Felipe Márquez Cañizales"
+        },
+        {
+            "id_municipio": "276",
+            "id_estado": "19",
+            "nombre_municipio": "Juan Vicente Campos Elías"
+        },
+        {
+            "id_municipio": "277",
+            "id_estado": "19",
+            "nombre_municipio": "La Ceiba"
+        },
+        {
+            "id_municipio": "278",
+            "id_estado": "19",
+            "nombre_municipio": "Miranda"
+        },
+        {
+            "id_municipio": "279",
+            "id_estado": "19",
+            "nombre_municipio": "Monte Carmelo"
+        },
+        {
+            "id_municipio": "280",
+            "id_estado": "19",
+            "nombre_municipio": "Motatán"
+        },
+        {
+            "id_municipio": "281",
+            "id_estado": "19",
+            "nombre_municipio": "Pampán"
+        },
+        {
+            "id_municipio": "282",
+            "id_estado": "19",
+            "nombre_municipio": "Pampanito"
+        },
+        {
+            "id_municipio": "283",
+            "id_estado": "19",
+            "nombre_municipio": "Rafael Rangel"
+        },
+        {
+            "id_municipio": "284",
+            "id_estado": "19",
+            "nombre_municipio": "San Rafael de Carvajal"
+        },
+        {
+            "id_municipio": "285",
+            "id_estado": "19",
+            "nombre_municipio": "Sucre"
+        },
+        {
+            "id_municipio": "286",
+            "id_estado": "19",
+            "nombre_municipio": "Trujillo"
+        },
+        {
+            "id_municipio": "287",
+            "id_estado": "19",
+            "nombre_municipio": "Urdaneta"
+        },
+        {
+            "id_municipio": "288",
+            "id_estado": "19",
+            "nombre_municipio": "Valera"
+        },
+        {
+            "id_municipio": "289",
+            "id_estado": "20",
+            "nombre_municipio": "Vargas"
+        },
+        {
+            "id_municipio": "290",
+            "id_estado": "21",
+            "nombre_municipio": "Arístides Bastidas"
+        },
+        {
+            "id_municipio": "291",
+            "id_estado": "21",
+            "nombre_municipio": "Bolívar"
+        },
+        {
+            "id_municipio": "292",
+            "id_estado": "21",
+            "nombre_municipio": "Bruzual"
+        },
+        {
+            "id_municipio": "293",
+            "id_estado": "21",
+            "nombre_municipio": "Cocorote"
+        },
+        {
+            "id_municipio": "294",
+            "id_estado": "21",
+            "nombre_municipio": "Independencia"
+        },
+        {
+            "id_municipio": "295",
+            "id_estado": "21",
+            "nombre_municipio": "José Antonio Páez"
+        },
+        {
+            "id_municipio": "296",
+            "id_estado": "21",
+            "nombre_municipio": "La Trinidad"
+        },
+        {
+            "id_municipio": "297",
+            "id_estado": "21",
+            "nombre_municipio": "Manuel Monge"
+        },
+        {
+            "id_municipio": "298",
+            "id_estado": "21",
+            "nombre_municipio": "Nirgua"
+        },
+        {
+            "id_municipio": "299",
+            "id_estado": "21",
+            "nombre_municipio": "Peña"
+        },
+        {
+            "id_municipio": "300",
+            "id_estado": "21",
+            "nombre_municipio": "San Felipe"
+        },
+        {
+            "id_municipio": "301",
+            "id_estado": "21",
+            "nombre_municipio": "Sucre"
+        },
+        {
+            "id_municipio": "302",
+            "id_estado": "21",
+            "nombre_municipio": "Urachiche"
+        },
+        {
+            "id_municipio": "303",
+            "id_estado": "21",
+            "nombre_municipio": "Veroes"
+        },
+        {
+            "id_municipio": "304",
+            "id_estado": "22",
+            "nombre_municipio": "Almirante Padilla"
+        },
+        {
+            "id_municipio": "305",
+            "id_estado": "22",
+            "nombre_municipio": "Baralt"
+        },
+        {
+            "id_municipio": "306",
+            "id_estado": "22",
+            "nombre_municipio": "Cabimas"
+        },
+        {
+            "id_municipio": "307",
+            "id_estado": "22",
+            "nombre_municipio": "Catatumbo"
+        },
+        {
+            "id_municipio": "308",
+            "id_estado": "22",
+            "nombre_municipio": "Colón"
+        },
+        {
+            "id_municipio": "309",
+            "id_estado": "22",
+            "nombre_municipio": "Francisco Javier Pulgar"
+        },
+        {
+            "id_municipio": "310",
+            "id_estado": "22",
+            "nombre_municipio": "Guajira"
+        },
+        {
+            "id_municipio": "311",
+            "id_estado": "22",
+            "nombre_municipio": "Jesús Enrique Lossada"
+        },
+        {
+            "id_municipio": "312",
+            "id_estado": "22",
+            "nombre_municipio": "Jesús María Semprún"
+        },
+        {
+            "id_municipio": "313",
+            "id_estado": "22",
+            "nombre_municipio": "La Cañada de Urdaneta"
+        },
+        {
+            "id_municipio": "314",
+            "id_estado": "22",
+            "nombre_municipio": "Lagunillas"
+        },
+        {
+            "id_municipio": "315",
+            "id_estado": "22",
+            "nombre_municipio": "Machiques de Perijá"
+        },
+        {
+            "id_municipio": "316",
+            "id_estado": "22",
+            "nombre_municipio": "Mara"
+        },
+        {
+            "id_municipio": "317",
+            "id_estado": "22",
+            "nombre_municipio": "Maracaibo"
+        },
+        {
+            "id_municipio": "318",
+            "id_estado": "22",
+            "nombre_municipio": "Miranda"
+        },
+        {
+            "id_municipio": "319",
+            "id_estado": "22",
+            "nombre_municipio": "Páez"
+        },
+        {
+            "id_municipio": "320",
+            "id_estado": "22",
+            "nombre_municipio": "Rosario de Perijá"
+        },
+        {
+            "id_municipio": "321",
+            "id_estado": "22",
+            "nombre_municipio": "San Francisco"
+        },
+        {
+            "id_municipio": "322",
+            "id_estado": "22",
+            "nombre_municipio": "Santa Rita"
+        },
+        {
+            "id_municipio": "323",
+            "id_estado": "22",
+            "nombre_municipio": "Simón Bolívar"
+        },
+        {
+            "id_municipio": "324",
+            "id_estado": "22",
+            "nombre_municipio": "Sucre"
+        },
+        {
+            "id_municipio": "325",
+            "id_estado": "22",
+            "nombre_municipio": "Valmore Rodríguez"
+        },
+        {
+            "id_municipio": "326",
+            "id_estado": "23",
+            "nombre_municipio": "Dependencias Federales"
+        }
+    ]
+}

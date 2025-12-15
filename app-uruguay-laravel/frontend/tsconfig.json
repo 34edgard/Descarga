@@ -1,0 +1,27 @@
+{
+    // "extends": [
+    //     "@tsconfig/node22/tsconfig.json",
+    //     "@vue/tsconfig/tsconfig.json"
+    // ],
+    "compilerOptions": {
+        "paths": {
+            "@/*": [
+                "./src/*"
+            ]
+        }
+    },
+    "exclude": [
+        "node_modules",
+        "dist"
+    ],
+    "allowJs": false,
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.tsx",
+        "src/**/*.vue",
+        "tests/**/*.ts",
+        "tests/**/*.tsx",
+        "components.d.ts",
+        "extras.d.ts"
+    ]
+}

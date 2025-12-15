@@ -1,0 +1,39 @@
+{
+    "data": [
+        {
+            "id_procedencia": "1",
+            "id_tipo_procedencia": "1",
+            "nombre_procedencia": "Hogar"
+        },
+        {
+            "id_procedencia": "2",
+            "id_tipo_procedencia": "1",
+            "nombre_procedencia": "Del Mismo plantel"
+        },
+        {
+            "id_procedencia": "3",
+            "id_tipo_procedencia": "1",
+            "nombre_procedencia": "De otro plantel"
+        },
+        {
+            "id_procedencia": "4",
+            "id_tipo_procedencia": "1",
+            "nombre_procedencia": "Multihogar"
+        },
+        {
+            "id_procedencia": "5",
+            "id_tipo_procedencia": "1",
+            "nombre_procedencia": "Hogar de cuidado"
+        },
+        {
+            "id_procedencia": "6",
+            "id_tipo_procedencia": "1",
+            "nombre_procedencia": "Guarderia"
+        },
+        {
+            "id_procedencia": "7",
+            "id_tipo_procedencia": "1",
+            "nombre_procedencia": "Otros"
+        }
+    ]
+}

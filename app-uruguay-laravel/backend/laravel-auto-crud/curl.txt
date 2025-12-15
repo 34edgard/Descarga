@@ -1,0 +1,1085 @@
+=====================Address=====================
+curl --location ':http://localhost/api/addresses' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request POST \
+--data '{
+    "sector_id": "value",
+    "house_number": "value",
+    "street": "value",
+    "addressable_type": "value",
+    "addressable_id": "value",
+    "type": "value",
+    "deleted_at": "value"
+}'
+
+curl --location ':http://localhost/api/addresses/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request PATCH \
+--data '{
+    "sector_id": "value",
+    "house_number": "value",
+    "street": "value",
+    "addressable_type": "value",
+    "addressable_id": "value",
+    "type": "value",
+    "deleted_at": "value"
+}'
+
+curl --location ':http://localhost/api/addresses/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request DELETE
+
+curl --location ':http://localhost/api/addresses' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request GET
+
+curl --location ':http://localhost/api/addresses/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request GET
+
+=====================Address=====================
+=====================Classroom=====================
+curl --location ':http://localhost/api/classrooms' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request POST \
+--data '{
+    "section_id": "value",
+    "name": "value",
+    "capacity": "value",
+    "shift": "value",
+    "deleted_at": "value"
+}'
+
+curl --location ':http://localhost/api/classrooms/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request PATCH \
+--data '{
+    "section_id": "value",
+    "name": "value",
+    "capacity": "value",
+    "shift": "value",
+    "deleted_at": "value"
+}'
+
+curl --location ':http://localhost/api/classrooms/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request DELETE
+
+curl --location ':http://localhost/api/classrooms' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request GET
+
+curl --location ':http://localhost/api/classrooms/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request GET
+
+=====================Classroom=====================
+=====================Country=====================
+curl --location ':http://localhost/api/countries' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request POST \
+--data '{
+    "name": "value",
+    "deleted_at": "value"
+}'
+
+curl --location ':http://localhost/api/countries/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request PATCH \
+--data '{
+    "name": "value",
+    "deleted_at": "value"
+}'
+
+curl --location ':http://localhost/api/countries/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request DELETE
+
+curl --location ':http://localhost/api/countries' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request GET
+
+curl --location ':http://localhost/api/countries/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request GET
+
+=====================Country=====================
+=====================Disability=====================
+curl --location ':http://localhost/api/disabilities' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request POST \
+--data '{
+    "name": "value",
+    "deleted_at": "value"
+}'
+
+curl --location ':http://localhost/api/disabilities/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request PATCH \
+--data '{
+    "name": "value",
+    "deleted_at": "value"
+}'
+
+curl --location ':http://localhost/api/disabilities/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request DELETE
+
+curl --location ':http://localhost/api/disabilities' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request GET
+
+curl --location ':http://localhost/api/disabilities/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request GET
+
+=====================Disability=====================
+=====================Document=====================
+curl --location ':http://localhost/api/documents' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request POST \
+--data '{
+    "documentable_type": "value",
+    "documentable_id": "value",
+    "document_type_id": "value",
+    "file_name": "value",
+    "file_path": "value",
+    "mime_type": "value",
+    "size": "value",
+    "status": "value",
+    "comments": "value",
+    "deleted_at": "value"
+}'
+
+curl --location ':http://localhost/api/documents/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request PATCH \
+--data '{
+    "documentable_type": "value",
+    "documentable_id": "value",
+    "document_type_id": "value",
+    "file_name": "value",
+    "file_path": "value",
+    "mime_type": "value",
+    "size": "value",
+    "status": "value",
+    "comments": "value",
+    "deleted_at": "value"
+}'
+
+curl --location ':http://localhost/api/documents/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request DELETE
+
+curl --location ':http://localhost/api/documents' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request GET
+
+curl --location ':http://localhost/api/documents/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request GET
+
+=====================Document=====================
+=====================DocumentType=====================
+curl --location ':http://localhost/api/document_types' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request POST \
+--data '{
+    "name": "value",
+    "description": "value",
+    "deleted_at": "value"
+}'
+
+curl --location ':http://localhost/api/document_types/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request PATCH \
+--data '{
+    "name": "value",
+    "description": "value",
+    "deleted_at": "value"
+}'
+
+curl --location ':http://localhost/api/document_types/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request DELETE
+
+curl --location ':http://localhost/api/document_types' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request GET
+
+curl --location ':http://localhost/api/document_types/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request GET
+
+=====================DocumentType=====================
+=====================EducationLevel=====================
+curl --location ':http://localhost/api/education_levels' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request POST \
+--data '{
+    "name": "value",
+    "deleted_at": "value"
+}'
+
+curl --location ':http://localhost/api/education_levels/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request PATCH \
+--data '{
+    "name": "value",
+    "deleted_at": "value"
+}'
+
+curl --location ':http://localhost/api/education_levels/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request DELETE
+
+curl --location ':http://localhost/api/education_levels' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request GET
+
+curl --location ':http://localhost/api/education_levels/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request GET
+
+=====================EducationLevel=====================
+=====================Enrollment=====================
+curl --location ':http://localhost/api/enrollments' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request POST \
+--data '{
+    "student_id": "value",
+    "school_year_id": "value",
+    "section_id": "value",
+    "classroom_id": "value",
+    "age": "value",
+    "shirt_size": "value",
+    "pants_size": "value",
+    "shoe_size": "value",
+    "brachial_circumference": "value",
+    "observations": "value",
+    "deleted_at": "value"
+}'
+
+curl --location ':http://localhost/api/enrollments/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request PATCH \
+--data '{
+    "student_id": "value",
+    "school_year_id": "value",
+    "section_id": "value",
+    "classroom_id": "value",
+    "age": "value",
+    "shirt_size": "value",
+    "pants_size": "value",
+    "shoe_size": "value",
+    "brachial_circumference": "value",
+    "observations": "value",
+    "deleted_at": "value"
+}'
+
+curl --location ':http://localhost/api/enrollments/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request DELETE
+
+curl --location ':http://localhost/api/enrollments' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request GET
+
+curl --location ':http://localhost/api/enrollments/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request GET
+
+=====================Enrollment=====================
+=====================Level=====================
+curl --location ':http://localhost/api/levels' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request POST \
+--data '{
+    "name": "value",
+    "description": "value",
+    "deleted_at": "value"
+}'
+
+curl --location ':http://localhost/api/levels/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request PATCH \
+--data '{
+    "name": "value",
+    "description": "value",
+    "deleted_at": "value"
+}'
+
+curl --location ':http://localhost/api/levels/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request DELETE
+
+curl --location ':http://localhost/api/levels' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request GET
+
+curl --location ':http://localhost/api/levels/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request GET
+
+=====================Level=====================
+=====================MedicalCondition=====================
+curl --location ':http://localhost/api/medical_conditions' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request POST \
+--data '{
+    "name": "value",
+    "deleted_at": "value"
+}'
+
+curl --location ':http://localhost/api/medical_conditions/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request PATCH \
+--data '{
+    "name": "value",
+    "deleted_at": "value"
+}'
+
+curl --location ':http://localhost/api/medical_conditions/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request DELETE
+
+curl --location ':http://localhost/api/medical_conditions' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request GET
+
+curl --location ':http://localhost/api/medical_conditions/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request GET
+
+=====================MedicalCondition=====================
+=====================Municipality=====================
+curl --location ':http://localhost/api/municipalities' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request POST \
+--data '{
+    "state_id": "value",
+    "name": "value",
+    "deleted_at": "value"
+}'
+
+curl --location ':http://localhost/api/municipalities/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request PATCH \
+--data '{
+    "state_id": "value",
+    "name": "value",
+    "deleted_at": "value"
+}'
+
+curl --location ':http://localhost/api/municipalities/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request DELETE
+
+curl --location ':http://localhost/api/municipalities' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request GET
+
+curl --location ':http://localhost/api/municipalities/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request GET
+
+=====================Municipality=====================
+=====================Nationality=====================
+curl --location ':http://localhost/api/nationalities' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request POST \
+--data '{
+    "name": "value",
+    "deleted_at": "value"
+}'
+
+curl --location ':http://localhost/api/nationalities/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request PATCH \
+--data '{
+    "name": "value",
+    "deleted_at": "value"
+}'
+
+curl --location ':http://localhost/api/nationalities/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request DELETE
+
+curl --location ':http://localhost/api/nationalities' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request GET
+
+curl --location ':http://localhost/api/nationalities/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request GET
+
+=====================Nationality=====================
+=====================NutritionalStatus=====================
+curl --location ':http://localhost/api/nutritional_statuses' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request POST \
+--data '{
+    "name": "value",
+    "deleted_at": "value"
+}'
+
+curl --location ':http://localhost/api/nutritional_statuses/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request PATCH \
+--data '{
+    "name": "value",
+    "deleted_at": "value"
+}'
+
+curl --location ':http://localhost/api/nutritional_statuses/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request DELETE
+
+curl --location ':http://localhost/api/nutritional_statuses' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request GET
+
+curl --location ':http://localhost/api/nutritional_statuses/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request GET
+
+=====================NutritionalStatus=====================
+=====================Occupation=====================
+curl --location ':http://localhost/api/occupations' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request POST \
+--data '{
+    "name": "value",
+    "deleted_at": "value"
+}'
+
+curl --location ':http://localhost/api/occupations/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request PATCH \
+--data '{
+    "name": "value",
+    "deleted_at": "value"
+}'
+
+curl --location ':http://localhost/api/occupations/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request DELETE
+
+curl --location ':http://localhost/api/occupations' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request GET
+
+curl --location ':http://localhost/api/occupations/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request GET
+
+=====================Occupation=====================
+=====================Parish=====================
+curl --location ':http://localhost/api/parishes' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request POST \
+--data '{
+    "municipality_id": "value",
+    "name": "value",
+    "deleted_at": "value"
+}'
+
+curl --location ':http://localhost/api/parishes/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request PATCH \
+--data '{
+    "municipality_id": "value",
+    "name": "value",
+    "deleted_at": "value"
+}'
+
+curl --location ':http://localhost/api/parishes/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request DELETE
+
+curl --location ':http://localhost/api/parishes' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request GET
+
+curl --location ':http://localhost/api/parishes/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request GET
+
+=====================Parish=====================
+=====================Phone=====================
+curl --location ':http://localhost/api/phones' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request POST \
+--data '{
+    "number": "value",
+    "type": "value",
+    "area_code": "value",
+    "carrier": "value",
+    "phoneable_type": "value",
+    "phoneable_id": "value",
+    "deleted_at": "value"
+}'
+
+curl --location ':http://localhost/api/phones/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request PATCH \
+--data '{
+    "number": "value",
+    "type": "value",
+    "area_code": "value",
+    "carrier": "value",
+    "phoneable_type": "value",
+    "phoneable_id": "value",
+    "deleted_at": "value"
+}'
+
+curl --location ':http://localhost/api/phones/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request DELETE
+
+curl --location ':http://localhost/api/phones' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request GET
+
+curl --location ':http://localhost/api/phones/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request GET
+
+=====================Phone=====================
+=====================Pregnancy=====================
+curl --location ':http://localhost/api/pregnancies' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request POST \
+--data '{
+    "representative_id": "value",
+    "months_pregnant": "value",
+    "under_control": "value",
+    "control_location": "value",
+    "deleted_at": "value"
+}'
+
+curl --location ':http://localhost/api/pregnancies/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request PATCH \
+--data '{
+    "representative_id": "value",
+    "months_pregnant": "value",
+    "under_control": "value",
+    "control_location": "value",
+    "deleted_at": "value"
+}'
+
+curl --location ':http://localhost/api/pregnancies/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request DELETE
+
+curl --location ':http://localhost/api/pregnancies' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request GET
+
+curl --location ':http://localhost/api/pregnancies/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request GET
+
+=====================Pregnancy=====================
+=====================PregnantFamilyMember=====================
+curl --location ':http://localhost/api/pregnant_family_members' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request POST \
+--data '{
+    "representative_id": "value",
+    "relationship_id": "value",
+    "name": "value",
+    "months_pregnant": "value",
+    "deleted_at": "value"
+}'
+
+curl --location ':http://localhost/api/pregnant_family_members/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request PATCH \
+--data '{
+    "representative_id": "value",
+    "relationship_id": "value",
+    "name": "value",
+    "months_pregnant": "value",
+    "deleted_at": "value"
+}'
+
+curl --location ':http://localhost/api/pregnant_family_members/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request DELETE
+
+curl --location ':http://localhost/api/pregnant_family_members' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request GET
+
+curl --location ':http://localhost/api/pregnant_family_members/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request GET
+
+=====================PregnantFamilyMember=====================
+=====================Provenance=====================
+curl --location ':http://localhost/api/provenances' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request POST \
+--data '{
+    "name": "value",
+    "deleted_at": "value"
+}'
+
+curl --location ':http://localhost/api/provenances/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request PATCH \
+--data '{
+    "name": "value",
+    "deleted_at": "value"
+}'
+
+curl --location ':http://localhost/api/provenances/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request DELETE
+
+curl --location ':http://localhost/api/provenances' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request GET
+
+curl --location ':http://localhost/api/provenances/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request GET
+
+=====================Provenance=====================
+=====================Relationship=====================
+curl --location ':http://localhost/api/relationships' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request POST \
+--data '{
+    "name": "value",
+    "deleted_at": "value"
+}'
+
+curl --location ':http://localhost/api/relationships/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request PATCH \
+--data '{
+    "name": "value",
+    "deleted_at": "value"
+}'
+
+curl --location ':http://localhost/api/relationships/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request DELETE
+
+curl --location ':http://localhost/api/relationships' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request GET
+
+curl --location ':http://localhost/api/relationships/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request GET
+
+=====================Relationship=====================
+=====================Representative=====================
+curl --location ':http://localhost/api/representatives' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request POST \
+--data '{
+    "id_number": "value",
+    "first_name": "value",
+    "last_name": "value",
+    "birth_date": "value",
+    "children_under_6_count": "value",
+    "is_pregnant": "value",
+    "lives_with_pregnant": "value",
+    "nationality_id": "value",
+    "education_level_id": "value",
+    "occupation_id": "value",
+    "deleted_at": "value"
+}'
+
+curl --location ':http://localhost/api/representatives/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request PATCH \
+--data '{
+    "id_number": "value",
+    "first_name": "value",
+    "last_name": "value",
+    "birth_date": "value",
+    "children_under_6_count": "value",
+    "is_pregnant": "value",
+    "lives_with_pregnant": "value",
+    "nationality_id": "value",
+    "education_level_id": "value",
+    "occupation_id": "value",
+    "deleted_at": "value"
+}'
+
+curl --location ':http://localhost/api/representatives/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request DELETE
+
+curl --location ':http://localhost/api/representatives' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request GET
+
+curl --location ':http://localhost/api/representatives/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request GET
+
+=====================Representative=====================
+=====================SchoolYear=====================
+curl --location ':http://localhost/api/school_years' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request POST \
+--data '{
+    "name": "value",
+    "start_date": "value",
+    "end_date": "value",
+    "is_current": "value",
+    "deleted_at": "value"
+}'
+
+curl --location ':http://localhost/api/school_years/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request PATCH \
+--data '{
+    "name": "value",
+    "start_date": "value",
+    "end_date": "value",
+    "is_current": "value",
+    "deleted_at": "value"
+}'
+
+curl --location ':http://localhost/api/school_years/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request DELETE
+
+curl --location ':http://localhost/api/school_years' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request GET
+
+curl --location ':http://localhost/api/school_years/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request GET
+
+=====================SchoolYear=====================
+=====================Section=====================
+curl --location ':http://localhost/api/sections' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request POST \
+--data '{
+    "level_id": "value",
+    "name": "value",
+    "deleted_at": "value"
+}'
+
+curl --location ':http://localhost/api/sections/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request PATCH \
+--data '{
+    "level_id": "value",
+    "name": "value",
+    "deleted_at": "value"
+}'
+
+curl --location ':http://localhost/api/sections/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request DELETE
+
+curl --location ':http://localhost/api/sections' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request GET
+
+curl --location ':http://localhost/api/sections/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request GET
+
+=====================Section=====================
+=====================Sector=====================
+curl --location ':http://localhost/api/sectors' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request POST \
+--data '{
+    "parish_id": "value",
+    "name": "value",
+    "deleted_at": "value"
+}'
+
+curl --location ':http://localhost/api/sectors/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request PATCH \
+--data '{
+    "parish_id": "value",
+    "name": "value",
+    "deleted_at": "value"
+}'
+
+curl --location ':http://localhost/api/sectors/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request DELETE
+
+curl --location ':http://localhost/api/sectors' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request GET
+
+curl --location ':http://localhost/api/sectors/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request GET
+
+=====================Sector=====================
+=====================State=====================
+curl --location ':http://localhost/api/states' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request POST \
+--data '{
+    "country_id": "value",
+    "name": "value",
+    "deleted_at": "value"
+}'
+
+curl --location ':http://localhost/api/states/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request PATCH \
+--data '{
+    "country_id": "value",
+    "name": "value",
+    "deleted_at": "value"
+}'
+
+curl --location ':http://localhost/api/states/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request DELETE
+
+curl --location ':http://localhost/api/states' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request GET
+
+curl --location ':http://localhost/api/states/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request GET
+
+=====================State=====================
+=====================Student=====================
+curl --location ':http://localhost/api/students' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request POST \
+--data '{
+    "nationality_id": "value",
+    "provenance_id": "value",
+    "medical_condition_id": "value",
+    "disability_id": "value",
+    "nutritional_status_id": "value",
+    "first_name": "value",
+    "last_name": "value",
+    "birth_date": "value",
+    "gender": "value",
+    "previous_school": "value",
+    "deleted_at": "value"
+}'
+
+curl --location ':http://localhost/api/students/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request PATCH \
+--data '{
+    "nationality_id": "value",
+    "provenance_id": "value",
+    "medical_condition_id": "value",
+    "disability_id": "value",
+    "nutritional_status_id": "value",
+    "first_name": "value",
+    "last_name": "value",
+    "birth_date": "value",
+    "gender": "value",
+    "previous_school": "value",
+    "deleted_at": "value"
+}'
+
+curl --location ':http://localhost/api/students/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request DELETE
+
+curl --location ':http://localhost/api/students' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request GET
+
+curl --location ':http://localhost/api/students/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request GET
+
+=====================Student=====================
+=====================Teacher=====================
+curl --location ':http://localhost/api/teachers' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request POST \
+--data '{
+    "id_number": "value",
+    "first_name": "value",
+    "last_name": "value",
+    "birth_date": "value",
+    "gender": "value",
+    "status": "value",
+    "education_level_id": "value",
+    "deleted_at": "value"
+}'
+
+curl --location ':http://localhost/api/teachers/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request PATCH \
+--data '{
+    "id_number": "value",
+    "first_name": "value",
+    "last_name": "value",
+    "birth_date": "value",
+    "gender": "value",
+    "status": "value",
+    "education_level_id": "value",
+    "deleted_at": "value"
+}'
+
+curl --location ':http://localhost/api/teachers/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request DELETE
+
+curl --location ':http://localhost/api/teachers' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request GET
+
+curl --location ':http://localhost/api/teachers/:id' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--request GET
+
+=====================Teacher=====================

@@ -1,0 +1,84 @@
+{
+    "data": [
+        {
+            "id_ocupacion": "1",
+            "nombre_ocupacion": "Ama de Casa"
+        },
+        {
+            "id_ocupacion": "2",
+            "nombre_ocupacion": "Obrero\/a"
+        },
+        {
+            "id_ocupacion": "3",
+            "nombre_ocupacion": "Empleado\/a"
+        },
+        {
+            "id_ocupacion": "4",
+            "nombre_ocupacion": "Comerciante"
+        },
+        {
+            "id_ocupacion": "5",
+            "nombre_ocupacion": "Técnico\/a"
+        },
+        {
+            "id_ocupacion": "6",
+            "nombre_ocupacion": "Profesional Independiente"
+        },
+        {
+            "id_ocupacion": "7",
+            "nombre_ocupacion": "Docente"
+        },
+        {
+            "id_ocupacion": "8",
+            "nombre_ocupacion": "Jubilado\/a"
+        },
+        {
+            "id_ocupacion": "9",
+            "nombre_ocupacion": "Desempleado\/a"
+        },
+        {
+            "id_ocupacion": "10",
+            "nombre_ocupacion": "Estudiante"
+        },
+        {
+            "id_ocupacion": "11",
+            "nombre_ocupacion": "Agricultor\/a"
+        },
+        {
+            "id_ocupacion": "12",
+            "nombre_ocupacion": "Ganadero\/a"
+        },
+        {
+            "id_ocupacion": "13",
+            "nombre_ocupacion": "Pescador\/a"
+        },
+        {
+            "id_ocupacion": "14",
+            "nombre_ocupacion": "Mecánico\/a"
+        },
+        {
+            "id_ocupacion": "15",
+            "nombre_ocupacion": "Conductor\/a"
+        },
+        {
+            "id_ocupacion": "16",
+            "nombre_ocupacion": "Enfermero\/a"
+        },
+        {
+            "id_ocupacion": "17",
+            "nombre_ocupacion": "Médico\/a"
+        },
+        {
+            "id_ocupacion": "18",
+            "nombre_ocupacion": "Abogado\/a"
+        },
+        {
+            "id_ocupacion": "19",
+            "nombre_ocupacion": "Ingeniero\/a"
+        },
+        {
+            "id_ocupacion": "20",
+            "nombre_ocupacion": "Militar"
+        }
+    ]
+}

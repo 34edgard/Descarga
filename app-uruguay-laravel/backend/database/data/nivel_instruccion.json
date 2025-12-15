@@ -1,0 +1,44 @@
+{
+    "data": [
+        {
+            "id_nivel_instruccion": "1",
+            "nombre_nivel_instruccion": "Ninguno"
+        },
+        {
+            "id_nivel_instruccion": "2",
+            "nombre_nivel_instruccion": "Primaria Incompleta"
+        },
+        {
+            "id_nivel_instruccion": "3",
+            "nombre_nivel_instruccion": "Primaria Completa"
+        },
+        {
+            "id_nivel_instruccion": "4",
+            "nombre_nivel_instruccion": "Secundaria Incompleta"
+        },
+        {
+            "id_nivel_instruccion": "5",
+            "nombre_nivel_instruccion": "Secundaria Completa"
+        },
+        {
+            "id_nivel_instruccion": "6",
+            "nombre_nivel_instruccion": "Bachillerato\/Preparatoria"
+        },
+        {
+            "id_nivel_instruccion": "7",
+            "nombre_nivel_instruccion": "Técnico"
+        },
+        {
+            "id_nivel_instruccion": "8",
+            "nombre_nivel_instruccion": "Universitario Incompleto"
+        },
+        {
+            "id_nivel_instruccion": "9",
+            "nombre_nivel_instruccion": "Universitario Completo"
+        },
+        {
+            "id_nivel_instruccion": "10",
+            "nombre_nivel_instruccion": "Postgrado"
+        }
+    ]
+}

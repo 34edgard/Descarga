@@ -1,0 +1,20 @@
+{
+    "data": [
+        {
+            "id_estado_nutricional": "1",
+            "nombre_estado_nutricional": "Normal"
+        },
+        {
+            "id_estado_nutricional": "2",
+            "nombre_estado_nutricional": "Bajo Peso"
+        },
+        {
+            "id_estado_nutricional": "3",
+            "nombre_estado_nutricional": "Sobrepeso"
+        },
+        {
+            "id_estado_nutricional": "4",
+            "nombre_estado_nutricional": "Obesidad"
+        }
+    ]
+}

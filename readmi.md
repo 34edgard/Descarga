@@ -1,1 +1,1 @@
-este repo es para comparar la 
+este repo es para comparar la misma aplicación web pero echa con framenwords diferentes para ver sus fortalezas y debilidades

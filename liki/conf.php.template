@@ -1,0 +1,50 @@
+<?php
+//cra un archivo con este código 
+const puerto = "localhost";
+const usuario_BD = "root";
+const contraceña_BD = "root";
+const nombre_BD = "app";
+const MODO_SANITIZACION = "ESTRICTO";
+const DSN = "sqlite:./DataBase/bd/app.db";
+
+//const DSN = "sqlite:./DataBase/bd/test.db";
+
+
+//const DSN = "mysql:host=".puerto.";dbname=".nombre_BD.";charset=utf8";
+
+
+
+
+const DB_DRIVER = 'sqlite'; // 'mysql', 'mariadb', 'sqlite', 'pgsql'  
+const DB_HOST = 'localhost';  
+const DB_PORT = ;  
+const DB_NAME = '';  
+const DB_USER = '';  
+const DB_PASSWORD = '';  
+const DB_CHARSET = 'utf8mb4';  
+  
+// Configuración de migraciones  
+const MIGRATION_TABLE = 'migrations';  
+const MIGRATION_PATH = __DIR__ . '/DataBase/migrations/';  
+const MIGRATION_AUTO_RUN = false; // Ejecutar automáticamente en producción
+
+
+
+
+
+//configuracion para controladores dentro de app
+
+const CONTOLLER_PATH = __DIR__.'/backend/Funciones/';
+
+
+
+
+const ERROR_RESPONSE_TYPE =  'json'; // 'json, html, xml'  
+const ERROR_LOG_ENABLED = true;  
+const ERROR_LOG_PATH = __DIR__ . '/logs/errors.log';  
+const ERROR_SHOW_DETAILS = true; // false en producción  
+const ERROR_LOG_LEVEL = 'INFO'; // 'DEBUG, INFO, WARNING, ERROR, CRITICAL'  
+const ERROR_LANGUAGE = 'es'; // 'es , 'en'  
+const ERROR_SEND_EMAIL = false;  
+const ERROR_EMAIL_TO = 'admin@example.com';  
+const ERROR_HTTP_CODES = true; // 

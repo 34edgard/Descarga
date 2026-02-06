@@ -74,14 +74,17 @@ class TestingRutas {
                 .url-pattern { color: #6c757d; font-family: monospace; }
             </style>
         </head>
+        
+        <script src=\"/frontend/js/htmx.js\"></script>
+        
         <body>
-            <div class='container'>
+            <div class='container' id='testinWeb'>
                 <h1>Testing de Rutas Disponibles</h1>
                 <div id='lista-rutas'>";
         
         foreach ($rutas as $index => $ruta) {
             $metodo_class = strtoupper($ruta['method']);
-            echo "<div class='ruta-item' onclick=\"mostrarFormulario('$index')\">
+            echo "<div class='ruta-item' hx-target=\"#lista-rutas\" hx-get=\"/testing/rutas/formulario?accion=mostrar_formulario&ruta_index=$index\">
                     <span class='metodo $metodo_class'>{$ruta['method']}</span>
                     <strong>{$ruta['url_pattern']}</strong>
                     <div class='url-pattern'>Regex: {$ruta['regex_pattern']}</div>
@@ -95,28 +98,9 @@ class TestingRutas {
             </div>
             
             <script>
-                function mostrarFormulario(index) {
-                    // Ocultar lista y mostrar formulario
-                    document.getElementById('lista-rutas').classList.add('hidden');
-                    const formularioDiv = document.getElementById('formulario-test');
-                    formularioDiv.classList.remove('hidden');
-                    
-                    // Cargar formulario via AJAX
-                    const xhr = new XMLHttpRequest();
-                    xhr.open('POST', '', true);
-                    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-                    xhr.onload = function() {
-                        if (xhr.status === 200) {
-                            formularioDiv.innerHTML = xhr.responseText;
-                        }
-                    };
-                    xhr.send('accion=mostrar_formulario&ruta_index=' + index);
-                }
                 
-                function volverALista() {
-                    document.getElementById('lista-rutas').classList.remove('hidden');
-                    document.getElementById('formulario-test').classList.add('hidden');
-                }
+                
+                
             </script>
             </body>
             </html>";
@@ -139,7 +123,7 @@ class TestingRutas {
         echo "<h2>Probar Ruta: <span class='metodo $metodo'>{$ruta['method']}</span> {$ruta['url_pattern']}</h2>";
         
         // Botón para volver
-        echo "<button type='button' class='back-btn' onclick='volverALista()'>← Volver a la lista</button>";
+        echo "<button type='button' class='back-btn' hx-get='/testing/rutas' hx-target='#testinWeb'>← Volver a la lista</button>";
         
         // Formulario principal
         echo "<form id='form-test' method='POST' action='' style='margin-top: 20px;'>";

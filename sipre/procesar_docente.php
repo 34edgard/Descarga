@@ -1,41 +1,45 @@
 <?php
-session_start();
-include 'includes/conexion.php';
+require_once 'includes/auth.php';
+require_once 'includes/conexion.php';
 
-// Proteger acceso
-if (!isset($_SESSION['usuario_id'])) {
-  header("Location: login.php");
-  exit;
+$id = $_POST['id'] ?? '';
+$nombre = trim($_POST['nombre']);
+$cedula = trim($_POST['cedula']);
+$telefono = trim($_POST['telefono']);
+$correo = trim($_POST['correo']);
+$nivel = $_POST['nivel'];
+$foto = '';
+
+if(isset($_FILES['foto']) && $_FILES['foto']['error']==0){
+    $nombre_foto = time().'_'.basename($_FILES['foto']['name']);
+    $destino = 'uploads/'.$nombre_foto;
+    if(move_uploaded_file($_FILES['foto']['tmp_name'],$destino)){
+        $foto = $destino;
+    }
 }
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-  // Obtener y sanitizar datos
-  $nombre = mysqli_real_escape_string($conexion, $_POST['nombre_docente']);
-  $cedula = mysqli_real_escape_string($conexion, $_POST['cedula_docente']);
-  $telefono = mysqli_real_escape_string($conexion, $_POST['telefono_docente']);
-  $correo = mysqli_real_escape_string($conexion, $_POST['correo_docente']);
+if($id){ // Editar
+    if($foto){
+        $sql = "UPDATE docentes SET nombre=?, cedula=?, telefono=?, correo=?, nivel=?, foto=? WHERE id=?";
+        $stmt = mysqli_prepare($conexion,$sql);
+        mysqli_stmt_bind_param($stmt,"ssssssi",$nombre,$cedula,$telefono,$correo,$nivel,$foto,$id);
+    } else {
+        $sql = "UPDATE docentes SET nombre=?, cedula=?, telefono=?, correo=?, nivel=? WHERE id=?";
+        $stmt = mysqli_prepare($conexion,$sql);
+        mysqli_stmt_bind_param($stmt,"sssssi",$nombre,$cedula,$telefono,$correo,$nivel,$id);
+    }
+} else { // Nuevo
+    $sql = "INSERT INTO docentes(nombre,cedula,telefono,correo,nivel,foto) VALUES(?,?,?,?,?,?)";
+    $stmt = mysqli_prepare($conexion,$sql);
+    mysqli_stmt_bind_param($stmt,"ssssss",$nombre,$cedula,$telefono,$correo,$nivel,$foto);
+}
 
-  // Validar campos obligatorios
-  if (empty($nombre) || empty($cedula) || empty($telefono)) {
-    $_SESSION['error'] = "Por favor complete todos los campos obligatorios";
-    header("Location: registro_docente.php");
-    exit;
-  }
-
-  // Insertar en la base de datos - USANDO LOS NOMBRES CORRECTOS DE COLUMNAS
-  $query = "INSERT INTO docentes (nombre, cedula, telefono, correo) 
-            VALUES ('$nombre', '$cedula', '$telefono', '$correo')";
-
-  if (mysqli_query($conexion, $query)) {
-    $_SESSION['exito'] = "Docente registrado exitosamente";
+if(mysqli_stmt_execute($stmt)){
     header("Location: gestion_docentes.php");
-    exit;
-  } else {
-    $_SESSION['error'] = "Error al registrar docente: " . mysqli_error($conexion);
-    header("Location: registro_docente.php");
-    exit;
-  }
 } else {
-  header("Location: registro_docente.php");
-  exit;
+    echo "❌ Error: ".mysqli_error($conexion);
 }
+
+mysqli_stmt_close($stmt);
+mysqli_close($conexion);
+?>

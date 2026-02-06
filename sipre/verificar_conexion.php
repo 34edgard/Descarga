@@ -1,5 +1,4 @@
 <?php
-// Probar con el archivo de conexión existente
 include 'includes/conexion.php';
 
 echo "<h3>🔍 Verificando Conexión y Usuario</h3>";
@@ -20,7 +19,6 @@ if ($conexion) {
             echo "✅ Usuario encontrado<br>";
             echo "Hash almacenado: " . $fila['contraseña'] . "<br>";
             
-            // Probar contraseña
             $verif = password_verify("123456", $fila['contraseña']);
             echo "Password verify: " . ($verif ? "✅ FUNCIONA" : "❌ NO FUNCIONA");
             
@@ -37,4 +35,3 @@ if ($conexion) {
 }
 
 mysqli_close($conexion);
-?>

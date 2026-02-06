@@ -1,8 +1,10 @@
 <?php
-session_start();
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
 include 'includes/conexion.php';
 
-// Proteger acceso solo para Administrador
 if ($_SESSION['rol'] !== 'Administrador') {
   echo "<h3>⛔ Acceso restringido</h3>";
   exit;
@@ -15,38 +17,11 @@ if ($_SESSION['rol'] !== 'Administrador') {
   <title>Registrar Usuario</title>
   <link rel="stylesheet" href="css/estilos.css">
   <style>
-    .formulario {
-      max-width: 500px;
-      margin: auto;
-      margin-top: 40px;
-      background-color: #fff;
-      padding: 25px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    .formulario h2 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    .formulario input, .formulario select {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 15px;
-      border-radius: 4px;
-      border: 1px solid #ccc;
-    }
-    .formulario button {
-      width: 100%;
-      padding: 10px;
-      background-color: #3498db;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-    .formulario button:hover {
-      background-color: #2980b9;
-    }
+    .formulario { max-width: 500px; margin: auto; margin-top: 40px; background-color: #fff; padding: 25px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1);}
+    .formulario h2 { text-align: center; margin-bottom: 20px;}
+    .formulario input, .formulario select { width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 4px; border: 1px solid #ccc;}
+    .formulario button { width: 100%; padding: 10px; background-color: #3498db; color: white; border: none; border-radius: 4px; cursor: pointer;}
+    .formulario button:hover { background-color: #2980b9;}
   </style>
 </head>
 <body>

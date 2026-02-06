@@ -1,8 +1,10 @@
 <?php
-session_start();
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
 include 'includes/conexion.php';
 
-// 🎯 DEFINIR FUNCIONES PRIMERO
 function login_exitoso($fila) {
     $_SESSION['usuario_id'] = $fila['id'];
     $_SESSION['nombre'] = $fila['nombre'];
@@ -22,7 +24,6 @@ function actualizar_password($usuario_id, $nuevo_hash, $conexion) {
     mysqli_stmt_close($stmt_update);
 }
 
-// 🚫 Validación de entrada
 if ($_SERVER['REQUEST_METHOD'] !== 'POST' || !isset($_POST['correo']) || !isset($_POST['contraseña'])) {
     $_SESSION['login_error'] = "⛔ Acceso no autorizado.";
     header("Location: login.php");
@@ -38,7 +39,6 @@ if (empty($correo) || empty($contraseña)) {
     exit;
 }
 
-// Consulta preparada
 $sql = "SELECT id, nombre, correo, contraseña, rol, foto FROM usuarios WHERE correo = ?";
 $stmt = mysqli_prepare($conexion, $sql);
 
@@ -53,24 +53,17 @@ mysqli_stmt_execute($stmt);
 $resultado = mysqli_stmt_get_result($stmt);
 
 if ($fila = mysqli_fetch_assoc($resultado)) {
-    // CASO 1: Contraseña hasheada correctamente
     if (password_verify($contraseña, $fila['contraseña'])) {
         login_exitoso($fila);
-    }
-    // CASO 2: Campo de contraseña está vacío o es NULL
-    else if (empty($fila['contraseña']) || $fila['contraseña'] === '' || $fila['contraseña'] === null) {
+    } else if (empty($fila['contraseña'])) {
         $nuevo_hash = password_hash($contraseña, PASSWORD_DEFAULT);
         actualizar_password($fila['id'], $nuevo_hash, $conexion);
         login_exitoso($fila);
-    }
-    // CASO 3: Contraseña sin hash (texto plano)
-    else if ($contraseña === $fila['contraseña']) {
+    } else if ($contraseña === $fila['contraseña']) {
         $nuevo_hash = password_hash($contraseña, PASSWORD_DEFAULT);
         actualizar_password($fila['id'], $nuevo_hash, $conexion);
         login_exitoso($fila);
-    }
-    // CASO 4: Todo falla
-    else {
+    } else {
         $_SESSION['login_error'] = "❌ Contraseña incorrecta.";
         header("Location: login.php");
         exit;
@@ -83,4 +76,3 @@ if ($fila = mysqli_fetch_assoc($resultado)) {
 
 mysqli_stmt_close($stmt);
 mysqli_close($conexion);
-?>

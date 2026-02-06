@@ -1,8 +1,7 @@
 <?php
 session_start();
+session_unset();
 session_destroy();
-echo "<script>
-  alert('Sesión cerrada correctamente');
-  window.location.href = 'login.php';
-</script>";
+
+header("Location: login.php?logout=1");
 exit;

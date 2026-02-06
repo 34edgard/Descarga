@@ -11,7 +11,6 @@ echo "Correo: " . $correo . "<br>";
 echo "Nueva contraseña: " . $nueva_contraseña . "<br>";
 echo "Nuevo hash: " . $nuevo_hash . "<br><br>";
 
-// Actualizar la contraseña vacía
 $sql = "UPDATE usuarios SET contraseña = ? WHERE correo = ? AND (contraseña = '' OR contraseña IS NULL)";
 $stmt = mysqli_prepare($conexion, $sql);
 mysqli_stmt_bind_param($stmt, "ss", $nuevo_hash, $correo);
@@ -22,7 +21,6 @@ if (mysqli_stmt_execute($stmt)) {
     if ($filas_afectadas > 0) {
         echo "✅ CONTRASEÑA ACTUALIZADA EXITOSAMENTE<br><br>";
         
-        // Verificar que ahora funciona
         $sql_verificar = "SELECT contraseña FROM usuarios WHERE correo = ?";
         $stmt_verificar = mysqli_prepare($conexion, $sql_verificar);
         mysqli_stmt_bind_param($stmt_verificar, "s", $correo);
@@ -41,7 +39,6 @@ if (mysqli_stmt_execute($stmt)) {
     } else {
         echo "⚠️ No se pudo actualizar. Probablemente ya tiene una contraseña.<br>";
         
-        // Ver qué hay realmente en la BD
         $sql_ver = "SELECT contraseña, LENGTH(contraseña) as largo FROM usuarios WHERE correo = ?";
         $stmt_ver = mysqli_prepare($conexion, $sql_ver);
         mysqli_stmt_bind_param($stmt_ver, "s", $correo);
@@ -60,4 +57,3 @@ if (mysqli_stmt_execute($stmt)) {
 
 mysqli_stmt_close($stmt);
 mysqli_close($conexion);
-?>

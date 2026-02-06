@@ -1,55 +1,23 @@
 <?php
-session_start();
-include 'includes/conexion.php';
+require_once 'includes/auth.php';
+require_once 'includes/conexion.php';
 
-// Verificar sesión
-if (!isset($_SESSION['usuario_id'])) {
-    header("Location: login.php");
-    exit;
+$rol_usuario = $_SESSION['rol'];
+if(!in_array($rol_usuario,['Administrador','Directora'])){
+    die("⛔ No tienes permisos para eliminar docentes.");
 }
 
-// Obtener ID del docente
-$id = isset($_GET['id']) ? intval($_GET['id']) : 0;
-
-if ($id <= 0) {
-    // Redireccionar si no hay ID válido
-    echo "<script>window.location.href = 'gestion_docentes.php';</script>";
-    exit;
+if($_SERVER['REQUEST_METHOD']=='POST' && isset($_POST['id_docente'])){
+    $id = intval($_POST['id_docente']);
+    $sql = "DELETE FROM docentes WHERE id=?";
+    $stmt = mysqli_prepare($conexion,$sql);
+    mysqli_stmt_bind_param($stmt,"i",$id);
+    if(mysqli_stmt_execute($stmt)){
+        header("Location: gestion_docentes.php");
+    } else {
+        echo "❌ Error: ".mysqli_error($conexion);
+    }
+    mysqli_stmt_close($stmt);
 }
-
-// Obtener nombre del docente para el mensaje
-$query = "SELECT nombre FROM docentes WHERE id = $id";
-$resultado = mysqli_query($conexion, $query);
-
-if (!$resultado || mysqli_num_rows($resultado) == 0) {
-    echo "<script>
-            alert('Docente no encontrado');
-            window.location.href = 'gestion_docentes.php';
-          </script>";
-    exit;
-}
-
-$docente = mysqli_fetch_assoc($resultado);
-$nombre_docente = $docente['nombre'];
-
-// Eliminar el docente
-$eliminar = "DELETE FROM docentes WHERE id = $id";
-
-if (mysqli_query($conexion, $eliminar)) {
-    // Éxito - Redireccionar con mensaje
-    echo "<script>
-            alert('Docente \"$nombre_docente\" eliminado correctamente');
-            window.location.href = 'gestion_docentes.php?mensaje=eliminado';
-          </script>";
-} else {
-    // Error
-    echo "<script>
-            alert('Error al eliminar el docente: " . addslashes(mysqli_error($conexion)) . "');
-            window.location.href = 'gestion_docentes.php';
-          </script>";
-}
-
-// Cerrar conexión
 mysqli_close($conexion);
-exit;
 ?>

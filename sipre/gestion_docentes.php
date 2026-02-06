@@ -1,361 +1,275 @@
 <?php
 session_start();
 include 'includes/conexion.php';
+include 'includes/auth.php'; // Verifica sesión y permisos
 
-// Proteger acceso
-if (!isset($_SESSION['usuario_id'])) {
-  header("Location: login.php");
-  exit;
+// Solo roles autorizados
+if (!in_array($_SESSION['rol'], ['Administrador', 'Director', 'Secretario'])) {
+    echo "<h3>⛔ Acceso restringido</h3>";
+    exit;
 }
 
-$nombre_usuario = $_SESSION['nombre'] ?? 'Usuario';
-$rol_usuario = $_SESSION['rol'] ?? '';
+$rol_usuario = $_SESSION['rol'];
 
-// Obtener lista de docentes - USANDO LOS NOMBRES CORRECTOS DE COLUMNAS
-$query = "SELECT * FROM docentes ORDER BY nombre ASC";
-$resultado = mysqli_query($conexion, $query);
+// ===========================
+// Paginación y búsqueda
+// ===========================
+$por_pagina = 10; // docentes por página
+$pagina = isset($_GET['pagina']) && is_numeric($_GET['pagina']) ? (int)$_GET['pagina'] : 1;
+$inicio = ($pagina - 1) * $por_pagina;
 
-$total_docentes = mysqli_num_rows($resultado);
+$busqueda = '';
+$where_sql = '';
+if (isset($_GET['buscar']) && !empty(trim($_GET['buscar']))) {
+    $busqueda = trim($_GET['buscar']);
+    $where_sql = "WHERE nombre LIKE '%$busqueda%' OR cedula LIKE '%$busqueda%'";
+}
+
+// Contar total de docentes para paginación
+$total_sql = "SELECT COUNT(*) as total FROM docentes $where_sql";
+$total_result = mysqli_query($conexion, $total_sql);
+$total_fila = mysqli_fetch_assoc($total_result);
+$total_docentes = $total_fila['total'];
+$total_paginas = ceil($total_docentes / $por_pagina);
+
+// Obtener docentes actuales
+$sql = "SELECT * FROM docentes $where_sql ORDER BY nombre ASC LIMIT $inicio, $por_pagina";
+$resultado = mysqli_query($conexion, $sql);
 ?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <title>Gestión de Docentes</title>
   <link rel="stylesheet" href="css/estilos.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
   <style>
     body {
       font-family: 'Arial', sans-serif;
       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
       margin: 0;
       padding: 20px;
-      min-height: 100vh;
     }
-    
-    .encabezado {
-      text-align: center;
-      background: white;
-      padding: 20px;
-      border-radius: 15px;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-      max-width: 1000px;
-      margin: 0 auto 25px auto;
-    }
-    
-    .encabezado img {
-      max-width: 80px;
-      margin-bottom: 10px;
-    }
-    
-    .usuario-info {
-      text-align: center;
-      font-size: 14px;
-      color: #666;
-      margin-top: 10px;
-    }
-    
-    .usuario-info strong {
-      color: #333;
-      font-size: 16px;
-    }
-    
+
     .panel {
-      background: white;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-      max-width: 1000px;
-      margin: 0 auto 25px auto;
-    }
-    
-    .panel h2 {
-      text-align: center;
-      color: #333;
-      margin-bottom: 25px;
-      font-size: 24px;
-      border-bottom: 2px solid #667eea;
-      padding-bottom: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-    }
-    
-    .estadistica-rapida {
-      background: linear-gradient(135deg, #667eea, #764ba2);
-      color: white;
-      padding: 20px;
-      border-radius: 10px;
-      text-align: center;
-      margin-bottom: 25px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    }
-    
-    .estadistica-rapida .numero {
-      font-size: 32px;
-      font-weight: bold;
-      margin-bottom: 5px;
-    }
-    
-    .estadistica-rapida .texto {
-      font-size: 16px;
-      opacity: 0.9;
-    }
-    
-    .boton {
-      padding: 12px 25px;
-      background: #667eea;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      font-size: 14px;
-      font-weight: bold;
-      transition: all 0.3s ease;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      text-decoration: none;
-      min-width: 120px;
-      margin: 5px;
-      justify-content: center;
-    }
-    
-    .boton:hover {
-      background: #5a6fd8;
-      transform: translateY(-2px);
-      box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
-    }
-    
-    .boton-secundario {
-      background: #2ecc71;
-    }
-    
-    .boton-secundario:hover {
-      background: #27ae60;
-    }
-    
-    .boton-peligro {
-      background: #e74c3c;
-    }
-    
-    .boton-peligro:hover {
-      background: #c0392b;
-    }
-    
-    .centrar-botones {
-      text-align: center;
-      margin: 25px 0 10px 0;
-    }
-    
-    .grupo-botones {
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-      flex-wrap: wrap;
-      margin: 20px 0;
-    }
-    
-    /* Estilos para la tabla de docentes */
-    .tabla-contenedor {
-      overflow-x: auto;
-      margin: 25px 0;
-    }
-    
-    .tabla-docentes {
       width: 100%;
-      border-collapse: collapse;
-      background: white;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      max-width: 900px;
+      background-color: #fff;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
     }
-    
-    .tabla-docentes th {
-      background: #667eea;
-      color: white;
-      padding: 15px;
-      text-align: left;
-      font-weight: bold;
-      border: none;
-    }
-    
-    .tabla-docentes td {
-      padding: 12px 15px;
-      border-bottom: 1px solid #f0f0f0;
-      color: #333;
-    }
-    
-    .tabla-docentes tr:hover {
-      background: #f8f9ff;
-    }
-    
-    .tabla-docentes tr:last-child td {
-      border-bottom: none;
-    }
-    
-    .acciones {
-      display: flex;
-      gap: 5px;
-      flex-wrap: wrap;
-    }
-    
-    .btn-accion {
-      padding: 6px 12px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 12px;
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-      transition: all 0.3s ease;
-    }
-    
-    .btn-editar {
-      background: #f39c12;
-      color: white;
-    }
-    
-    .btn-editar:hover {
-      background: #d35400;
-    }
-    
-    .btn-eliminar {
-      background: #e74c3c;
-      color: white;
-    }
-    
-    .btn-eliminar:hover {
-      background: #c0392b;
-    }
-    
-    .sin-registros {
+
+    h2 {
       text-align: center;
-      padding: 40px;
-      color: #666;
-      font-style: italic;
-      background: #f8f9fa;
-      border-radius: 10px;
-      margin: 20px 0;
+      margin-bottom: 20px;
     }
-    
-    .sin-registros i {
-      font-size: 48px;
-      margin-bottom: 15px;
-      color: #ccc;
+
+    .buscador {
+      text-align: center;
+      margin-bottom: 20px;
     }
-    
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
+
+    .buscador input[type="text"] {
+      padding: 8px;
+      width: 60%;
+      border-radius: 5px;
+      border: 1px solid #ccc;
     }
-    
-    .panel {
-      animation: fadeIn 0.5s ease;
+
+    .buscador button {
+      padding: 8px 12px;
+      border-radius: 5px;
+      border: none;
+      background-color: #3498db;
+      color: white;
+      cursor: pointer;
+    }
+
+    .buscador button:hover {
+      background-color: #2980b9;
+    }
+
+    .docente {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #eee;
+      padding: 15px 0;
+    }
+
+    .docente img {
+      width: 70px;
+      height: 70px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+
+    .docente-info {
+      flex: 1;
+    }
+
+    .docente-info p {
+      margin: 4px 0;
+    }
+
+    .acciones {
+      text-align: right;
+    }
+
+    .acciones form, .acciones a {
+      display: inline-block;
+      margin-left: 5px;
+    }
+
+    .acciones button, .acciones a {
+      padding: 6px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    .acciones button {
+      background-color: #e74c3c;
+      border: none;
+    }
+
+    .acciones button:hover {
+      background-color: #c0392b;
+    }
+
+    .acciones a {
+      background-color: #f39c12;
+    }
+
+    .acciones a:hover {
+      background-color: #d68910;
+    }
+
+    .botones-final {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 25px;
+    }
+
+    .botones-final a {
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      color: white;
+      text-align: center;
+    }
+
+    .btn-menu {
+      background-color: #27ae60;
+    }
+
+    .btn-menu:hover {
+      background-color: #1e8449;
+    }
+
+    .btn-registrar {
+      background-color: #3498db;
+    }
+
+    .btn-registrar:hover {
+      background-color: #2980b9;
+    }
+
+    .paginacion {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .paginacion a {
+      display: inline-block;
+      margin: 0 5px;
+      padding: 6px 12px;
+      background-color: #3498db;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    .paginacion a:hover {
+      background-color: #2980b9;
+    }
+
+    .paginacion .actual {
+      background-color: #2ecc71;
     }
   </style>
 </head>
 <body>
-  <div class="encabezado">
-    <img src="img/logo.png" alt="Logo institucional">
-    <h1 style="color: #333; margin: 10px 0 5px 0;">Sistema Escolar</h1>
-    <div class="usuario-info">
-      <strong><?php echo $nombre_usuario; ?></strong> (<?php echo $rol_usuario; ?>)
-    </div>
-  </div>
-
   <div class="panel">
-    <h2><i class="fas fa-chalkboard-teacher"></i> Gestión de Docentes</h2>
-    
-    <div class="estadistica-rapida">
-      <div class="numero"><?php echo $total_docentes; ?></div>
-      <div class="texto">Docentes Registrados</div>
+    <h2>👩‍🏫 Docentes Registrados</h2>
+
+    <!-- Buscador -->
+    <div class="buscador">
+      <form method="GET">
+        <input type="text" name="buscar" placeholder="Buscar por nombre o cédula" value="<?php echo htmlspecialchars($busqueda); ?>">
+        <button type="submit">🔍 Buscar</button>
+      </form>
     </div>
 
-    <div class="centrar-botones">
-      <a href="registro_docente.php" class="boton boton-secundario">
-        <i class="fas fa-plus"></i> Nuevo Docente
-      </a>
-      <a href="panel_alumnos.php" class="boton">
-        <i class="fas fa-home"></i> Menú Principal
-      </a>
-    </div>
+    <?php
+      if(mysqli_num_rows($resultado) > 0){
+          while ($fila = mysqli_fetch_assoc($resultado)) {
+              $foto_docente = !empty($fila['foto']) ? $fila['foto'] : "uploads/690fda7a66610_img-4.jpeg";
 
-    <div class="tabla-contenedor">
-      <?php if ($total_docentes > 0): ?>
-        <table class="tabla-docentes">
-          <thead>
-            <tr>
-              <th>Nombre Completo</th>
-              <th>Cédula</th>
-              <th>Teléfono</th>
-              <th>Correo</th>
-              <th>Nivel</th>
-              <th>Acciones</th>
-            </tr>
-          </thead>
-          <tbody>
-            <?php while ($docente = mysqli_fetch_assoc($resultado)): ?>
-              <tr>
-                <td><?php echo htmlspecialchars($docente['nombre']); ?></td>
-                <td><?php echo htmlspecialchars($docente['cedula']); ?></td>
-                <td><?php echo htmlspecialchars($docente['telefono']); ?></td>
-                <td>
-                  <?php if (!empty($docente['correo'])): ?>
-                    <?php echo htmlspecialchars($docente['correo']); ?>
-                  <?php else: ?>
-                    <span style="color: #999; font-style: italic;">No registrado</span>
-                  <?php endif; ?>
-                </td>
-                <td>
-                  <?php if (!empty($docente['nivel'])): ?>
-                    <?php echo htmlspecialchars($docente['nivel']); ?>
-                  <?php else: ?>
-                    <span style="color: #999; font-style: italic;">No asignado</span>
-                  <?php endif; ?>
-                </td>
-                <td>
-                  <div class="acciones">
-                    <a href="editar_docente.php?id=<?php echo $docente['id']; ?>" class="btn-accion btn-editar">
-                      <i class="fas fa-edit"></i> Editar
-                    </a>
-                    <a href="eliminar_docente.php?id=<?php echo $docente['id']; ?>" class="btn-accion btn-eliminar" onclick="return confirm('¿Está seguro de eliminar este docente?')">
-                      <i class="fas fa-trash"></i> Eliminar
-                    </a>
-                  </div>
-                </td>
-              </tr>
-            <?php endwhile; ?>
-          </tbody>
-        </table>
-      <?php else: ?>
-        <div class="sin-registros">
-          <i class="fas fa-users-slash"></i>
-          <h3>No hay docentes registrados</h3>
-          <p>No se han encontrado docentes en el sistema.</p>
-          <a href="registro_docente.php" class="boton boton-secundario" style="margin-top: 15px;">
-            <i class="fas fa-plus"></i> Registrar primer docente
-          </a>
-        </div>
-      <?php endif; ?>
-    </div>
-  </div>
+              echo "<div class='docente'>
+                      <img src='{$foto_docente}' alt='Foto'>
+                      <div class='docente-info'>
+                        <p><strong>Nombre:</strong> {$fila['nombre']}</p>
+                        <p><strong>Cédula:</strong> {$fila['cedula']}</p>
+                        <p><strong>Teléfono:</strong> {$fila['telefono']}</p>
+                        <p><strong>Correo:</strong> {$fila['correo']}</p>
+                        <p><strong>Nivel:</strong> {$fila['nivel']}</p>
+                      </div>
+                      <div class='acciones'>";
 
-  <div class="grupo-botones">
-    <a href="registro_docente.php" class="boton boton-secundario">
-      <i class="fas fa-plus"></i> Nuevo Docente
-    </a>
-    <a href="panel_alumnos.php" class="boton">
-      <i class="fas fa-home"></i> Menú Principal
-    </a>
-    <form action="logout.php" method="POST" style="display: inline;">
-      <button type="submit" class="boton boton-peligro">
-        <i class="fas fa-sign-out-alt"></i> Cerrar Sesión
-      </button>
-    </form>
+              // Botón Editar (Todos los roles autorizados)
+              echo "<a href='editar_docente.php?id={$fila['id']}'>✏️ Editar</a>";
+
+              // Solo Director o Administrador pueden eliminar
+              if (in_array($rol_usuario, ['Administrador', 'Director'])) {
+                  echo "<form action='eliminar_docente.php' method='POST' onsubmit=\"return confirm('¿Eliminar este docente?')\">
+                          <input type='hidden' name='id_docente' value='{$fila['id']}'>
+                          <button type='submit'>🗑 Eliminar</button>
+                        </form>";
+              }
+
+              echo "</div></div>";
+          }
+      } else {
+          echo "<p style='text-align: center;'>No hay docentes registrados.</p>";
+      }
+
+      mysqli_close($conexion);
+    ?>
+
+    <!-- Paginación -->
+    <?php if ($total_paginas > 1): ?>
+      <div class="paginacion">
+        <?php for($i=1; $i<=$total_paginas; $i++): ?>
+          <a class="<?php echo $i==$pagina?'actual':''; ?>" href="?pagina=<?php echo $i; ?>&buscar=<?php echo urlencode($busqueda); ?>"><?php echo $i; ?></a>
+        <?php endfor; ?>
+      </div>
+    <?php endif; ?>
+
+    <!-- Botones finales: Volver y Registrar -->
+    <div class="botones-final">
+      <a href="panel_alumnos.php" class="btn-menu">🏠 Volver al Menú Principal</a>
+      <a href="formulario_docente.php" class="btn-registrar">➕ Registrar Docente</a>
+    </div>
   </div>
 </body>
 </html>

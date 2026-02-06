@@ -1,1 +1,5 @@
 este es un repo para comprar la misma aplicación pero echa con framenword diferentes
+
+dentro del repo tenemos una aplicación echa con laravel "app-uruguay-laravel" esta aplicación con todos sus paquetes instalados pesa 229mb y posee una complejiad considerable 
+dentro del repo también tenemos la aplicación liki "app-uruguay-liki" esta echa con un framenword minimalista pero esta en proceso de migración de una versión antigua a una versión mas actual el framenword liki solo pesa 931.54 KB mientras que la aplicación entera pesa actualmente 4.56 MB,  liki de base consume por petición de 0.18mb a 0.26mb y responde de 0.032s a 0.106s la aplicación completa actualmente consume de 0.22mb a 0.32mb y responde de 0.05s a 0.108s 
+dentro del repo también esta una aplicación echa con php puro "sipre" y apressar de tener muchas funcionalidades es complicado escalarla, mantenerla, tiene muchas malas prácticas y fue echa con ia en su mayoría asi que abria que pasarla a otro framenword

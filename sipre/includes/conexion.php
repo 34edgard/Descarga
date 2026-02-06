@@ -1,8 +1,8 @@
 <?php
-$host = "sql210.infinityfree.com";
-$usuario = "if0_37533972";
-$password = "PoRkldd3vL";
-$base_datos = "if0_37533972_sipre";
+$host = "";
+$usuario = "";
+$password = "";
+$base_datos = "";
 
 // Crear conexión
 $conexion = mysqli_connect($host, $usuario, $password, $base_datos);
